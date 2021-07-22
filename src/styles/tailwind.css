@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+
+.markdown {
+    & p {
+        @apply my-6;
+    }
+
+    & blockquote {
+        @apply my-12 ml-12 pl-12 text-2xl font-bold font-sans italic border-l-2 border-dotted border-gray-300;
+    }
+
+    & ul {
+        @apply list-disc list-inside pl-6;
+    }
+
+    & ol {
+        @apply list-decimal list-inside pl-6;
+    }
+}
+
+@tailwind utilities;

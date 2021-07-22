@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+<a href="{{ '/bookshelf/' | url }}">
+    <svg class="inline align-middle h-4 w-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 10 16">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L10 2L4 8L10 14L8 16L0 8L8 0Z"></path>
+    </svg>
+    <span>Back to Bookshelf</span>
+</a>
+<div class="flex flex-col sm:flex-row my-8 space-y-16 sm:space-y-0 sm:space-x-16">
+    <div class="w-1/2 m-auto sm:w-1/4">
+        {% image "./src/assets/cover/" + page.fileSlug + ".jpg", "Book Cover" %}
+    </div>
+    <div class="w-3/4 space-y-8">
+        <h1 class="text-4xl font-bold font-sans">{{ title }}{% if subtitle %}: {{ subtitle }}{% endif %}
+        </h1>
+        <p class="text-2xl dark:text-gray-400">by {{ author }}</p>
+        <p class="dark:text-gray-400">read in {{ date | formatDate }}</p>
+    </div>
+</div>
+<div class="markdown mt-16">
+    {{ content | safe }}
+</div>
