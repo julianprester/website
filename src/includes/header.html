@@ -5,7 +5,7 @@
             <span class="text-base font-mono" data-nosnippet>julian@prester.me</span>
         </a>
     </div>
-    <div class="md:hidden">
+    <div class="flex space-x-3 md:hidden">
         <button @click="darkMode = !darkMode" @click="isOpen = false">
             <svg class="h-6 w-6 fill-current justify-self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path :class="{ 'hidden': darkMode }" fill-rule="evenodd" clip-rule="evenodd"
@@ -25,7 +25,7 @@
     </div>
     <div class="w-full md:flex md:items-center md:w-auto" :class="{ 'hidden': !isOpen }">
         {% set navPages = collections.all | eleventyNavigation %}
-        <ul class="md:flex justify-end items-center md:space-x-8 space-y-2 md:space-y-0 pt-2 md:pt-0">
+        <ul class="md:flex justify-end items-center md:space-x-8 space-y-4 md:space-y-0 pt-6 md:pt-0">
         {%- for entry in navPages %}
             <li>
                 <a class="{% if entry.url == page.url %}text-primary-800 dark:text-primary-600{% endif %} hover:text-primary-800 dark:hover:text-primary-600 transition-colors" href="{{ entry.url | url }}" @click="isOpen = false">{{ entry.title }}</a>
