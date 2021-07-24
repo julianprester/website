@@ -9,7 +9,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
     }
   
     let metadata = await Image(src, {
-      widths: [300, 600, 900],
+      widths: [300, 400, 500],
       formats: ['webp', 'jpeg'],
       urlPath: "/assets/cover/",
       outputDir: "./public/assets/cover/"
