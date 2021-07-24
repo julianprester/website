@@ -44,10 +44,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setBrowserSyncConfig({
         snippet: false,
     });
-
-    eleventyConfig.addPassthroughCopy({
-        './node_modules/alpinejs/dist/cdn.js': './js/alpine.js'
-    });
     eleventyConfig.addPassthroughCopy('src/assets/favicon');
 
     return {
