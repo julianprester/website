@@ -23,8 +23,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           port: ${{ secrets.SSH_PORT }}
-          key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
+          key: ${{ secrets.SSH_KEY_WO_PASSPHRASE }}
           source: "public"
           target: ${{ secrets.SSH_DIR }}
           rm: true
