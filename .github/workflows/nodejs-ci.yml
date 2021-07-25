@@ -27,3 +27,4 @@ jobs:
           source: "public"
           target: ${{ secrets.SSH_DIR }}
           rm: true
+          strip_components: 1
