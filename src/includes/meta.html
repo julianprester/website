@@ -1,58 +1,21 @@
-{%- set absolutePageUrl -%}{{ meta.url }}{%- endset -%} {# General #}
-<meta name="description" content="{{ description or meta.description }}" />
-<link rel="canonical" href="{{ absolutePageUrl }}" />
+<title>{{ title }}</title>
 
-{# Open Graph #}
-<meta property="og:site_name" content="{{ meta.title }}" />
-<meta property="og:title" content="{{ meta.title }} - {{ title }}" />
-<meta
-  property="og:description"
-  content="{{ renderData.description or description or meta.description }}"
-/>
-<meta property="og:url" content="{{ absolutePageUrl }}" />
-<meta property="og:locale" content="{{ meta.locale }}" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="{{ meta.twitter }}" />
-<meta
-  property="og:image"
-  content="{{ absolutePageUrl }}/android-chrome-512x512.png"
-/>
-<meta
-  property="og:image:width"
-  content="{{ renderData.socialImageWidth or 640 }}"
-/>
-<meta
-  property="og:image:height"
-  content="{{ renderData.socialImageHeight or 640 }}"
-/>
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="{{ '/assets/favicon/apple-touch-icon.png' | url }}"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  href="{{ '/assets/favicon/favicon-32x32.png' | url }}"
-  sizes="32x32"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  href="{{ '/assets/favicon/favicon-16x16.png' | url }}"
-  sizes="16x16"
-/>
-<link
-  rel="shortcut icon"
-  href="{{ '/assets/favicon/favicon.ico' | url }}"
-/>
-<link rel="manifest" href="{{ '/assets/favicon/site.webmanifest' | url }}" />
-<meta name="theme-color" content="#00568E" />
+<meta name="description" content="{{ description }}">
+<meta name="robots" content="index,follow">
+<meta name="author" content="{{ author }}">
 
-{# RSS Feed #}
-<link
-  type="application/atom+xml"
-  rel="alternate"
-  href="{{ meta.url }}/feed.xml"
-  title="{{ meta.title }}"
-/>
+<link rel="canonical" href="{{ meta.url }}{{ page.url | url }}">
+
+<meta property="og:title" content="{{ title }}">
+<meta property="og:type" content="{{ type }}">
+
+<meta property="og:url" content="{{ meta.url }}{{ page.url | url }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:image" content="{{ meta.url }}/assets/favicon/android-chrome-512x512.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ meta.twitter }}">
+<meta name="twitter:url" content="{{ meta.url }}{{ page.url | url }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:image" content="{{ meta.url }}/assets/favicon/android-chrome-512x512.png">
