@@ -1,6 +1,6 @@
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const Image = require("@11ty/eleventy-img");
+const eleventyImagePlugin = require("@11ty/eleventy-img");
 
 async function imageShortcode(src, alt, sizes = "100vw") {
     if(alt === undefined) {
@@ -8,7 +8,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
       throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
     }
   
-    let metadata = await Image(src, {
+    let metadata = await eleventyImagePlugin(src, {
       widths: [300, 400, 500],
       formats: ['webp', 'jpeg'],
       urlPath: "/assets/cover/",
@@ -45,6 +45,7 @@ module.exports = function (eleventyConfig) {
         snippet: false,
     });
     eleventyConfig.addPassthroughCopy('src/assets/favicon');
+    eleventyConfig.addPassthroughCopy('src/robots.txt');
 
     return {
         htmlTemplateEngine: "njk",
