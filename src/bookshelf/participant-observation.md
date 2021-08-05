@@ -1,5 +1,5 @@
 ---
-tags: draft
+tags: book
 layout: book
 title: Participant Observation
 author: James Spradley
