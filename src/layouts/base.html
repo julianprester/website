@@ -1,41 +1,47 @@
 ---
-title: Default
+title: Julian Prester
+description: Julian is a Scientia PhD scholar in Information Systems at the UNSW Business School. He is interested in Digital Work and Digital Nomadism.
+author: Julian Prester
+type: website
 ---
 
 <!DOCTYPE html>
-<html lang="{{ meta.lang }}" class="antialiased">
-  <head>
-    <title>{{title}}</title>
-    
-    <meta charset="UTF-8"/>
-    <meta name="description" content="{{meta.description}}"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+<html lang="en" class="antialiased">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"></noscript>
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
-    <script defer src="https://unpkg.com/alpinejs@3.2.1/dist/cdn.min.js"></script>
-    {% include "meta.html" %}
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
 
-  <body
-    x-data="{'darkMode': false}"
-    x-init="
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap">
+  </noscript>
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+  <script defer src="https://unpkg.com/alpinejs@3.2.1/dist/cdn.min.js"></script>
+
+{% include "meta.html" %}
+
+{% include "favicon.html" %}
+
+</head>
+
+<body x-data="{'darkMode': false}" x-init="
       darkMode = localStorage.getItem('darkMode') ? JSON.parse(localStorage.getItem('darkMode')) : window.matchMedia('(prefers-color-scheme: dark)').matches;
       $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
-    <div :class="{ 'dark': darkMode }">
-      <div class="dark:bg-gray-900 dark:text-gray-200">
-        <div class="container mx-auto px-8">
-          {% include "header.html" %}
-          <div class="py-6 font-mono">
-            {{ content | safe }}
-          </div>
-          {% include "footer.html" %}
+  <div :class="{ 'dark': darkMode }">
+    <div class="dark:bg-gray-900 dark:text-gray-200">
+      <div class="container mx-auto px-8">
+        {% include "header.html" %}
+        <div class="py-6 font-mono">
+          {{ content | safe }}
         </div>
+        {% include "footer.html" %}
       </div>
     </div>
-  </body>
+  </div>
+</body>
 
 </html>
