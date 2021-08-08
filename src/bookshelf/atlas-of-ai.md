@@ -4,7 +4,7 @@ layout: book
 title: The Atlas of AI
 subtitle: Power, Politics, and the Planetary Costs of Artificial Intelligence
 author: Kate Crawford
-date: 2021-06-01
+date: 2021-04-01
 ---
 
 In her book, "Atlas of AI", Kate Crawford tries to highlight how AI development today is largely based on the assumptions of Cartesian dualism.

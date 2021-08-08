@@ -3,7 +3,7 @@ tags: book
 layout: book
 title: Participant Observation
 author: James Spradley
-date: 2021-07-01
+date: 2021-05-01
 ---
 
 In this almost textbook like handbook Spradley presents his "Developmental Research Sequence" for doing participant observation and ultimately writing ethnography.
