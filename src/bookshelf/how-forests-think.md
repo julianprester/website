@@ -4,6 +4,7 @@ layout: book
 title: How Forests Think
 subtitle: Toward an Anthropology Beyond the Human
 author: Eduardo Kohn
+link: https://www.goodreads.com/book/show/17718835-how-forests-think
 date: 2020-11-01
 ---
 

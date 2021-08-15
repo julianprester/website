@@ -4,6 +4,7 @@ layout: book
 title: Peak
 subtitle: Secrets from the New Science of Expertise
 author: Anders Ericsson and Robert Pool
+link: https://www.goodreads.com/book/show/26312997-peak
 date: 2020-06-01
 ---
 

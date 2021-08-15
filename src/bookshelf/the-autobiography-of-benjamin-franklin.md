@@ -3,6 +3,7 @@ tags: book
 layout: book
 title: The Autobiography of Benjamin Franklin
 author: Benjamin Franklin
+link: https://www.goodreads.com/book/show/52309.The_Autobiography_of_Benjamin_Franklin
 date: 2020-12-01
 ---
 

@@ -4,6 +4,7 @@ layout: book
 title: Work
 subtitle: A History of How We Spend Our Time
 author: James Suzman
+link: https://www.goodreads.com/book/show/54550359-work
 date: 2021-07-01
 ---
 

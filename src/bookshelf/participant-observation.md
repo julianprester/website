@@ -3,6 +3,7 @@ tags: book
 layout: book
 title: Participant Observation
 author: James Spradley
+link: https://www.goodreads.com/book/show/212619.Participant_Observation
 date: 2021-05-01
 ---
 

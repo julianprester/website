@@ -4,6 +4,7 @@ layout: book
 title: The Atlas of AI
 subtitle: Power, Politics, and the Planetary Costs of Artificial Intelligence
 author: Kate Crawford
+link: https://www.goodreads.com/book/show/50131136-atlas-of-ai
 date: 2021-04-01
 ---
 

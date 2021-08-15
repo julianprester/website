@@ -4,6 +4,7 @@ layout: book
 title: Process-Relational Philosophy
 subtitle: An Introduction to Alfred North Whitehead
 author: Robert Mesle
+link: https://www.goodreads.com/book/show/2888219-process-relational-philosophy
 date: 2020-02-01
 ---
 

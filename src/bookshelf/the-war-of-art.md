@@ -4,6 +4,7 @@ layout: book
 title: The War of Art
 subtitle: Break Through the Blocks and Win Your Inner Creative Battles
 author: Steven Pressfield
+link: https://www.goodreads.com/book/show/1319.The_War_of_Art
 date: 2021-02-01
 ---
 

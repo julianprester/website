@@ -4,6 +4,7 @@ layout: book
 title: Process Philosophy
 subtitle: A Survey of Basic Issues
 author: Nicholas Rescher
+link: https://www.goodreads.com/book/show/2604434-process-philosophy
 date: 2020-03-01
 ---
 

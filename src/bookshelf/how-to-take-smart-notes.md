@@ -4,6 +4,7 @@ layout: book
 title: How to Take Smart Notes
 subtitle: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
 author: Sönke Ahrens
+link: https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes
 date: 2020-08-01
 ---
 
