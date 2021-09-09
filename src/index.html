@@ -8,24 +8,44 @@ eleventyNavigation:
 ---
 
 <h1 class="font-sans text-4xl font-bold mb-8">Julian Prester</h1>
-<p class="mb-4">I am a <a class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors" href="https://www.scientia.unsw.edu.au/">Scientia PhD scholar</a> in Information Systems at the <a class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors" href="https://www.business.unsw.edu.au/">UNSW Business School</a> in Sydney, Australia. Before joining UNSW, I completed a Bachelor of Science in Business Informatics and a Master of Science with Honors in Management Information Systems from the <a class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors" href="https://www.uni-regensburg.de/index.html.en">University of Regensburg</a>.</p>
-<p class="mb-4">I am doing research at the intersection of technology, work and organizations, focusing on various forms of <i>Digital Work</i> and <i>Digital Nomadism</i>. Using ethnographic and in-depth qualitative field research, my thesis aims to deepen our understanding of new forms of digital working and organizing. My research has been published in international journals such as <i>The Strategic Journal of Information Systems</i>, <i>Decision Support Systems</i> and <i>Information & Management</i> as well as the proceedings of leading IS conferences such as the <i>European Conference on Information Systems</i> and the <i>International Conference on Information Systems</i>.</p>
-<p class="mb-4">In my spare time I enjoy <a class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors" href="{{ '/bookshelf/' | url }}">reading books</a> and <a class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors" href="https://github.com/julianprester/">writing code</a>. I love travelling the world and believe a passport full of stamps is way better than an apartment full of stuff.</p>
+<p class="mb-4">I am a <a
+        class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors"
+        href="https://www.scientia.unsw.edu.au/">Scientia PhD scholar</a> in Information Systems at the <a
+        class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors"
+        href="https://www.business.unsw.edu.au/">UNSW Business School</a> in Sydney, Australia. Before joining UNSW, I
+    completed a Bachelor of Science in Business Informatics and a Master of Science with Honors in Management
+    Information Systems from the <a
+        class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors"
+        href="https://www.uni-regensburg.de/index.html.en">University of Regensburg</a>.</p>
+<p class="mb-4">I am doing research at the intersection of technology, work and organizations, focusing on various forms
+    of <i>Digital Work</i> and <i>Digital Nomadism</i>. Using ethnographic and in-depth qualitative field research, my
+    thesis aims to deepen our understanding of new forms of digital working and organizing. My research has been
+    published in international journals such as <i>The Strategic Journal of Information Systems</i>, <i>Decision Support
+        Systems</i> and <i>Information & Management</i> as well as the proceedings of leading IS conferences such as the
+    <i>European Conference on Information Systems</i> and the <i>International Conference on Information Systems</i>.
+</p>
+<p class="mb-4">In my spare time I enjoy <a
+        class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors"
+        href="{{ '/bookshelf/' | url }}">reading books</a> and <a
+        class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors"
+        href="https://github.com/julianprester/">writing code</a>. I love travelling the world and believe a passport
+    full of stamps is way better than an apartment full of stuff.</p>
 <h2 class="mt-6 pt-6 mb-2 border-t-2 border-dotted border-gray-300 text-2xl font-bold font-sans">What's New</h1>
-<div x-data="{ show: false }" class="flex flex-col">
-    <table class="table-auto">
-        <tbody>
-            {% for item in news %}
-                {% if loop.index0 < 5 %}
-                    <tr>
-                {% else %}
+    <div x-data="{ show: false }" class="flex flex-col">
+        <table class="table-auto">
+            <tbody>
+                {% for item in news %}
+                {% if loop.index0 < 5 %} <tr>
+                    {% else %}
                     <tr x-show="show">
-                {% endif %}
-                    <td class="py-2 pr-2 align-top">{{ item.date | safe }}</td>
-                    <td class="py-2 pl-2 align-top">{{ item.content | safe }}</td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    <button @click="show = !show" class="self-end text-primary-800 dark:text-primary-600 dark:hover:text-secondary-200 transition-colors" x-text="show ? '(Show less)' : '(Show more)'"></button>
-</div>
+                        {% endif %}
+                        <td class="py-2 pr-2 align-top">{{ item.date | safe }}</td>
+                        <td class="py-2 pl-2 align-top">{{ item.content | safe }}</td>
+                    </tr>
+                    {% endfor %}
+            </tbody>
+        </table>
+        <button @click="show = !show"
+            class="self-end text-primary-800 dark:text-primary-600 dark:hover:text-secondary-200 transition-colors"
+            x-text="show ? '(Show less)' : '(Show more)'"></button>
+    </div>

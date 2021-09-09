@@ -12,17 +12,17 @@ eleventyNavigation:
   <p>Accompanied by my loose and opinionated reading notes.</p>
 </div>
 <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 px-16 sm:px-0">
-{%- for book in collections.book | reverse -%}
-<div>
-  <a class="group" href="{{ book.url }}">
-    <div class="w-full transform group-hover:scale-105 transition duration-500 ease-in-out">
-      {% image "./src/assets/cover/" + book.fileSlug + ".jpg", "Book Cover" %}
-    </div>
-    <div>
-      <p class="pt-8 pb-2 text-lg">{{ book.data.title }}</p>
-      <p class="text-sm text-gray-500">{{ book.data.author }}</p>
-    </div>
-  </a>
-</div>
-{%- endfor -%}
+  {%- for book in collections.book | reverse -%}
+  <div>
+    <a class="group" href="{{ book.url }}">
+      <div class="w-full transform group-hover:scale-105 transition duration-500 ease-in-out">
+        {% image "./src/assets/cover/" + book.fileSlug + ".jpg", "Book Cover" %}
+      </div>
+      <div>
+        <p class="pt-8 pb-2 text-lg">{{ book.data.title }}</p>
+        <p class="text-sm text-gray-500">{{ book.data.author }}</p>
+      </div>
+    </a>
+  </div>
+  {%- endfor -%}
 </div>
