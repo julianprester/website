@@ -45,6 +45,7 @@ module.exports = function (eleventyConfig) {
         snippet: false,
     });
     eleventyConfig.addPassthroughCopy('src/assets/favicon');
+    eleventyConfig.addPassthroughCopy('src/assets/cv');
     eleventyConfig.addPassthroughCopy('src/robots.txt');
 
     return {
