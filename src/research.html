@@ -16,21 +16,22 @@ eleventyNavigation:
     include ethnographic interviews, participant observation, multi-sited ethnography, networks, natural language
     processing, and deep learning.</p>
 <div x-data="{ tab: 'journal' }">
-    <div class="grid grid-cols-1 sm:grid-cols-3 my-8 font-sans text-2xl">
+    <div class="grid grid-cols-3 my-8 font-sans text-lg lg:text-2xl">
         <button @click="tab = 'journal'"
-            class="text-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
+            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
             :class="tab == 'journal' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
-            <svg class="h-10 w-10 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <svg class="flex-none h-10 w-10 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path fill="#FF5722" d="M32,15v28H10c-2.2,0-4-1.8-4-4V15H32z" />
                 <path fill="#FFCCBC" d="M14,5v34c0,2.2-1.8,4-4,4h29c2.2,0,4-1.8,4-4V5H14z" />
                 <path fill="#FF5722"
                     d="M20 10H38V14H20zM20 17H28V19H20zM30 17H38V19H30zM20 21H28V23H20zM30 21H38V23H30zM20 25H28V27H20zM30 25H38V27H30zM20 29H28V31H20zM30 29H38V31H30zM20 33H28V35H20zM30 33H38V35H30zM20 37H28V39H20zM30 37H38V39H30z" />
-            </svg> Journal articles
+            </svg>
+            <span>Journal articles</span>
         </button>
         <button @click="tab = 'conference'"
-            class="text-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
+            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
             :class="tab == 'conference' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
-            <svg class="h-9 w-9 inline mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <svg class="flex-none h-9 w-9 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path fill="#90caf9" d="M40 45L8 45 8 3 30 3 40 13z" />
                 <path fill="#e1f5fe" d="M38.5 14L29 14 29 4.5z" />
                 <path fill="#e57373"
@@ -41,12 +42,13 @@ eleventyNavigation:
                     transform="rotate(134.999 43.069 30.93)" />
                 <path fill="#ffc107" d="M27.473 42.152L26 48 31.848 46.527z" />
                 <path fill="#37474f" d="M26.744 45.043L26 48 28.956 47.256z" />
-            </svg>Conference papers
+            </svg>
+            <span>Conference papers</span>
         </button>
         <button @click="tab = 'presentation'"
-            class="text-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
+            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
             :class="tab == 'presentation' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
-            <svg class="h-10 w-10 inline mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <svg class="flex-none h-10 w-10 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path fill="#37474f" d="M19.9 31.7H32.599999999999994V33.7H19.9z"
                     transform="rotate(-64.437 26.249 32.75)" />
                 <path fill="#37474f" d="M30.7 26.4H32.7V39.099999999999994H30.7z"
@@ -59,7 +61,8 @@ eleventyNavigation:
                 <path fill="#455a64" d="M24,19H11c-1.1,0-2-0.9-2-2s0.9-2,2-2h13c1.1,0,2,0.9,2,2S25.1,19,24,19z" />
                 <path fill="#455a64" d="M4,22v7l2.6,1.8L7.5,42h7L16,19c0,0-1.1-4-5-4S4,18.1,4,22" />
                 <path fill="#d81b60" d="M35 17h3v9h-3V17zM31 20h3v6h-3V20zM27 22h3v4h-3V22z" />
-            </svg>Presentations
+            </svg>
+            <span>Presen&shy;tations</span>
         </button>
     </div>
     <div class="tab-panel">
