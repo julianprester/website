@@ -33,7 +33,7 @@ type: website
       $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
   <div :class="{ 'dark': darkMode }">
     <div class="dark:bg-gray-900 dark:text-gray-200">
-      <div class="container mx-auto px-8">
+      <div class="container max-w-screen-lg mx-auto px-8">
         {% include "header.html" %}
         <div class="py-6 font-mono">
           {{ content | safe }}
