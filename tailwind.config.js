@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
     purge: {
@@ -10,6 +11,10 @@ module.exports = {
     },
     darkMode: 'class',
     theme: {
+        screens: {
+            'xs': '475px',
+            ...defaultTheme.screens,
+        },
         extend: {
             colors: {
                 primary: colors.sky,
