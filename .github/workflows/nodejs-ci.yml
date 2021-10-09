@@ -37,6 +37,6 @@ jobs:
           target: ${{ secrets.SSH_DIR }}
           strip_components: 1
       - uses: jakejarvis/cloudflare-purge-action@master
-        with:
+        env:
           CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
           CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
