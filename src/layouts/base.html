@@ -32,7 +32,7 @@ type: website
       darkMode = localStorage.getItem('darkMode') ? JSON.parse(localStorage.getItem('darkMode')) : window.matchMedia('(prefers-color-scheme: dark)').matches;
       $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
   <div :class="{ 'dark': darkMode }">
-    <div class="dark:bg-gray-900 dark:text-gray-200">
+    <div class="min-h-screen dark:bg-gray-900 dark:text-gray-200">
       <div class="container max-w-screen-lg mx-auto px-8">
         {% include "header.html" %}
         <div class="py-6 font-mono">
