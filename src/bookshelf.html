@@ -16,7 +16,7 @@ eleventyNavigation:
   <div>
     <a class="group" href="{{ book.url }}">
       <div class="w-full transform group-hover:scale-105 transition duration-500 ease-in-out">
-        {% image "./src/assets/cover/" + book.fileSlug + ".jpg", "Book Cover" %}
+        {% image "./src/assets/cover/" + book.fileSlug + ".jpg", book.data.title %}
       </div>
       <div>
         <p class="pt-8 pb-2 text-lg">{{ book.data.title }}</p>
