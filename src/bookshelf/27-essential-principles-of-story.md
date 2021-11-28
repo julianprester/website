@@ -15,7 +15,7 @@ Harari in his book [Sapiens](../sapiens) also argues that homo sapiens are the o
 Only because of this ability were humans able to build civilisations.
 
 Daniel Joshua Rubin in his book "27 Essential Principles of Story" offers a simple but effective template with which one can develop stories.
-Rubin's fundamental storytelling structure mirrors the classic three-act structure with its three climactic moments of theater, film and television.
+Rubin's fundamental storytelling structure mirrors the classic three-act structure with its three climactic moments of theatre, film and television.
 He refers to the three acts as the beginning with the central dramatic question, the middle with a clash of expectations and the ending with the answer to the central dramatic question.
 
 > "When someone tells you a story, the first thing you wonder is "Does this have a point?" The end of your story answers that question—it expresses your theme, or main idea, the one the entire narrative is crafted to convey."
@@ -39,7 +39,7 @@ The ending of a story starts with a critical decision that will decide how the c
 
 A great story needs an active protagonist that makes deliberate decisions, because these actions reveal the true character of the protagonist.
 Actions fill the story with meaning through causal chains.
-Actions are most revealing when the they entail difficult decisions and dilemmas.
+Actions are most revealing when they entail difficult decisions and dilemmas.
 Great stories are full of such conflicts; conflict with oneself, personal relationships, society at large, and ultimately the physical world.
 Conflicts are often layered meaning they unfold at multiple levels.
 Ideally in building momentum these layers are revealed from the outside in until the core character of the protagonist is revealed.
@@ -73,7 +73,7 @@ Because these influencing acts are strategic, the meaning of what is said in dia
 The 27 principles in Rubin's book are coherent and clearly developed.
 They offer an effective scaffold to think about, analyse, and write stories.
 Yet I fear this effectiveness comes as a double-edged sword.
-The book brings the danger of thinking exclusively in terms of Rubin's template whenever one encounters stories be it in books, movies, or theater.
-It preimposes a template onto one's mind that makes it difficult to fully appreciate the art of good storytelling.
+The book brings the danger of thinking exclusively in terms of Rubin's template whenever one encounters stories be it in books, movies, or theatre.
+It imposes a template onto one's mind that makes it difficult to fully appreciate the art of good storytelling.
 It turns a virtuous craft into an all to formulaic procedure.
 I guess, as with all books, the advice should be to take the few most useful principles, but not blindly apply all 27.
