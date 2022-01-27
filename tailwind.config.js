@@ -2,13 +2,10 @@ const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-    purge: {
-        content: ['src/**/*.html'],
-        safelist: [
-            'rounded-lg',
-            'shadow-lg',
-        ]
-    },
+    content: [
+        'src/**/*.html',
+        '.eleventy.js'
+    ],
     darkMode: 'class',
     theme: {
         screens: {
@@ -19,7 +16,7 @@ module.exports = {
             colors: {
                 primary: colors.sky,
                 secondary: colors.amber,
-                gray: colors.trueGray
+                gray: colors.neutral
             },
         },
         fontFamily: {
