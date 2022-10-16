@@ -53,6 +53,7 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPassthroughCopy('src/assets/favicon');
   eleventyConfig.addPassthroughCopy('src/assets/cv');
+  eleventyConfig.addPassthroughCopy('src/assets/pdf');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy({
     './node_modules/alpinejs/dist/cdn.min.js': './js/alpine.js',
