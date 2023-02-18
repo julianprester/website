@@ -48,7 +48,7 @@ eleventyNavigation:
                     {% endfor %}
             </tbody>
         </table>
-        <button @click="show = !show"
+        <button @click="show = !show" aria-label="Show more"
             class="self-end text-primary-800 dark:text-primary-600 dark:hover:text-secondary-200 transition-colors"
             x-text="show ? '(Show less)' : '(Show more)'"></button>
     </div>

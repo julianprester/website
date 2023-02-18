@@ -17,7 +17,7 @@ eleventyNavigation:
     processing, and deep learning.</p>
 <div x-data="{ tab: 'journal' }">
     <div class="grid grid-cols-3 my-8 font-sans text-lg lg:text-2xl">
-        <button @click="tab = 'journal'"
+        <button @click="tab = 'journal'" aria-label="Show journal papers"
             class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
             :class="tab == 'journal' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
             <svg class="flex-none h-10 w-10 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
@@ -28,7 +28,7 @@ eleventyNavigation:
             </svg>
             <span>Journal articles</span>
         </button>
-        <button @click="tab = 'conference'"
+        <button @click="tab = 'conference'" aria-label="Show conference papers"
             class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
             :class="tab == 'conference' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
             <svg class="flex-none h-9 w-9 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
@@ -45,7 +45,7 @@ eleventyNavigation:
             </svg>
             <span>Conference papers</span>
         </button>
-        <button @click="tab = 'presentation'"
+        <button @click="tab = 'presentation'" aria-label="Show presentation papers"
             class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors outline-none"
             :class="tab == 'presentation' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
             <svg class="flex-none h-10 w-10 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
