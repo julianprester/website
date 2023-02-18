@@ -1,7 +1,7 @@
 <nav x-data="{ isOpen: false }"
     class="flex items-center justify-between py-4 flex-wrap text-xl font-bold text-gray-600 dark:text-gray-400 border-b-2 border-dotted border-gray-300">
     <div class="flex">
-        <a href="mailto:{{ meta.name }} &lt;{{ meta.email }}&gt;"
+        <a href="mailto:{{ meta.name }} &lt;{{ meta.email }}&gt;" aria-label="Send email"
             class="flex hover:text-primary-800 dark:hover:text-primary-600 outline-none">
             <svg class="h-6 w-6 mr-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M0 0h24v24H0V0z" fill="none" />
