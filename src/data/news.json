@@ -1,5 +1,9 @@
 [
     {
+        "date": "Mar&nbsp;2023",
+        "content": "Great news! I won <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://www.student.unsw.edu.au/prizes/2022'>The Professor M Weinstock Memorial Prize</a> for the most innovative Information Systems PhD thesis of the year 2022 at UNSW."
+    },
+    {
         "date": "Oct&nbsp;2022",
         "content": "Paper on the socio-temporal rhythms of digital nomad work accepted at the 11th International Workshop on the Changing Nature of Work."
     },
