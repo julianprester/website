@@ -42,7 +42,7 @@ eleventyNavigation:
                     {% else %}
                     <tr x-show="show">
                         {% endif %}
-                        <td class="py-2 pr-2 align-top">{{ item.date | safe }}</td>
+                        <td class="w-24 py-2 pr-2 align-top">{{ item.date | monthYearDateFromISO | safe }}</td>
                         <td class="py-2 pl-2 align-top">{{ item.content | safe }}</td>
                     </tr>
                     {% endfor %}

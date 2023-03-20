@@ -34,8 +34,12 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 }
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addFilter("formatDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat('LLLL yyyy');
+  eleventyConfig.addFilter("monthYearDateFromISO", (dateObj) => {
+    return DateTime.fromISO(dateObj).toFormat('LLL yyyy');
+  });
+
+  eleventyConfig.addFilter("monthYearDateFromJSON", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat('LLL yyyy');
   });
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
