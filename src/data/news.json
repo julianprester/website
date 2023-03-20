@@ -1,130 +1,162 @@
 [
     {
-        "date": "Mar&nbsp;2023",
+        "title": "Professor M Weinstock Memorial Prize",
+        "date": "2023-03-01",
         "content": "Great news! I won <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://www.student.unsw.edu.au/prizes/2022'>The Professor M Weinstock Memorial Prize</a> for the most innovative Information Systems PhD thesis of the year 2022 at UNSW."
     },
     {
-        "date": "Oct&nbsp;2022",
+        "title": "Paper Digital Nomad Rhythms CNOW",
+        "date": "2022-10-01",
         "content": "Paper on the socio-temporal rhythms of digital nomad work accepted at the 11th International Workshop on the Changing Nature of Work."
     },
     {
-        "date": "Sep&nbsp;2022",
+        "title": "Paper Zoom Fatigue ICIS",
+        "date": "2022-09-01",
         "content": "Paper with Blair Wang on Zoom fatigue accepted for presentation at the 42nd International Conference on Information Systems."
     },
     {
-        "date": "Aug&nbsp;2022",
+        "title": "DISRUPT.SYDNEY",
+        "date": "2022-08-01",
         "content": "We are running <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://disrupt.sydney'>Disrupt.Sydney 2022</a>, Australia's premier disruption conference. Join us to challenge common sense, learn about new ways of thinking, and engage with our digital future(s) in fun and creative ways. <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://www.eventbrite.com.au/e/394914358477/?discount=JULIAN60'>Register</a> now (with an exclusive $60 discount)."
     },
     {
-        "date": "Jul&nbsp;2022",
+        "title": "Launch callsforpapers.org",
+        "date": "2022-07-01",
         "content":"Missed another deadline for that special issue that your paper would have fit in perfectly? I've developed <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://callsforpapers.org'>callsforpapers.org</a> to help you stay on top of the latest calls for papers in the IS discipline."
     },
     {
-        "date": "Apr&nbsp;2022",
+        "title": "PhD Graduation UNSW",
+        "date": "2022-04-01",
         "content":"PhD! I finally graduated from the UNSW Business School."
     },
     {
-        "date": "Feb&nbsp;2022",
+        "title": "Lecturer University of Sydney",
+        "date": "2022-02-01",
         "content": "Excited to start as a lecturer (assistant professor) at <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://www.sydney.edu.au/business/our-research/research-areas/business-information-systems.html'>The University of Sydney</a>. Looking forward to joining an amazing team."
     },
     {
-        "date": "Sep&nbsp;2021",
+        "title": "Paper Digital Nomad Legitimation ICIS",
+        "date": "2021-09-01",
         "content": "Paper with Dubravka Cecez-Kecmanovic, Daniel Schlagwein and Michael Cahalane on digital nomads and legitimation accepted for presentation at the 42nd International Conference on Information Systems."
     },
     {
-        "date": "Sep&nbsp;2021",
+        "title": "Paper Digital Platforms For Knowledge Work Contracting Decisions ICIS",
+        "date": "2021-09-01",
         "content": "Paper with Gerit Wagner on contracting decisions on digital platforms accepted for presentation at the 42nd International Conference on Information Systems."
     },
     {
-        "date": "May&nbsp;2021",
+        "title": "Paper Digital Nomad Legitimation PROS",
+        "date": "2021-05-01",
         "content": "Paper with Dubravka Cecez-Kecmanovic, Daniel Schlagwein and Michael Cahalane on digital nomads and legitimation accepted for presentation at the 12th International Symposium on Process Organization Studies."
     },
     {
-        "date": "Apr&nbsp;2021",
+        "title": "Paper Digital Platforms For Knowledge Work JSIS",
+        "date": "2021-04-01",
         "content": "Paper with Gerit Wagner and Guy Pare on digital platforms for knowledge work accepted for publication in The Journal of Strategic Information Systems."
     },
     {
-        "date": "Apr&nbsp;2021",
+        "title": "Paper Digital Platforms Configurations ECIS",
+        "date": "2021-04-01",
         "content": "Paper with Gerit Wagner on digital platforms accepted for presentation at the 29th European Conference on Information Systems."
     },
     {
-        "date": "Dec&nbsp;2020",
+        "title": "Paper Scientific Impact of Literature Reviews IM",
+        "date": "2020-12-01",
         "content": "Paper with Gerit Wagner, Maria Roche, Guido Schryen, Alexander Benlian, Guy Pare and Mathieu Templier on the scientific impact of literature reviews accepted for publication in Information & Management."
     },
     {
-        "date": "Oct&nbsp;2020",
+        "title": "Paper Ideational Impact of Literature Reviews DSS",
+        "date": "2020-10-01",
         "content": "Paper with Gerit Wagner, Guido Schryen and Nik Hassan on the ideational impact of literature reviews accepted for publication in Decision Support Systems."
     },
     {
-        "date": "Sep&nbsp;2020",
+        "title": "Paper Digital Nomad Leadership ICIS",
+        "date": "2020-09-01",
         "content": "Paper with Dubravka Cecez-Kecmanovic, Michael Cahalane and Daniel Schlagwein on digital nomads and leadership accepted for presentation at the 41st International Conference on Information Systems."
     },
     {
-        "date": "Aug&nbsp;2020",
+        "title": "Paper Scientific Impact of Design Science Research CAIS",
+        "date": "2020-08-01",
         "content": "Paper with Gerit Wagner and Guido Schryen on the scientific impact of design science research accepted for publication in Communications of the Association for Information Systems."
     },
     {
-        "date": "May&nbsp;2020",
+        "title": "AOM OCIS DC",
+        "date": "2020-05-01",
         "content": "Extremely grateful to be accepted to attend the <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://ocis.aom.org/events/eventdescription?CalendarEventKey=3f78de62-d46a-49a9-b1ee-ec85f0c7e1f3&CommunityKey=e65e4e1a-a400-401f-a064-12467ac71598&Home=%2fhome'>OCIS Doctoral Consortium at Academy of Management</a>. Looking forward to inspiring faculty and enlightening discussions!"
     },
     {
-        "date": "May&nbsp;2020",
+        "title": "Paper Concept Evolution ECIS",
+        "date": "2020-05-01",
         "content": "Paper with Nik Hassan and Gerit Wagner on concept evolution accepted for presentation at the 28th European Conference on Information Systems"
     },
     {
-        "date": "Oct&nbsp;2019",
+        "title": "7in7",
+        "date": "2019-10-01",
         "content": "Extremely grateful to be invited to speak about the identity of digital nomads at the <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://7in7.co'>7in7 conference</a>. Inspiring people and fantastic community!"
     },
     {
-        "date": "Sep&nbsp;2019",
+        "title": "Paper Digital Nomad Identity ICIS",
+        "date": "2019-09-01",
         "content": "Paper with Dubravka Cecez-Kecmanovic and Daniel Schlagwein on digital nomads and identity accepted for presentation at the 40th International Conference on Information Systems."
     },
     {
-        "date": "Sep&nbsp;2019",
+        "title": "Paper Digital Platforms For Knowledge Work ICIS",
+        "date": "2019-09-01",
         "content": "Paper with Gerit Wagner on digital platforms for knowledge work accepted for presentation at the 40th International Conference on Information Systems."
     },
     {
-        "date": "Sep&nbsp;2019",
+        "title": "Paper Security Vulnerability Forecasting CS",
+        "date": "2019-09-01",
         "content": "Paper with Emrah Yasasin, Gerit Wagner und Guido Schryen on security vulnerabilities accepted for publication by Computers & Security."
     },
     {
-        "date": "Jul&nbsp;2019",
+        "title": "UNSW Business School 3MT",
+        "date": "2019-07-01",
         "content": "Great news! I was awarded the UNSW Business School 3MT People's Choice Award for my PhD thesis about digital work."
     },
     {
-        "date": "May&nbsp;2019",
+        "title": "UNSW Business School Research Fair",
+        "date": "2019-05-01",
         "content": "Great news! I was awarded the first price of the UNSW Business School research fair with my poster on identity emergence among digital nomads."
     },
     {
-        "date": "Apr&nbsp;2019",
+        "title": "Paper Crowdsourcing for Education ECIS",
+        "date": "2019-04-01",
         "content": "Paper with Daniel Schlagwein and Dubravka Cecez-Kecmanovic on crowdsourcing for education accepted for presentation at the 27th European Conference on Information Systems."
     },
     {
-        "date": "Mar&nbsp;2019",
+        "title": "Paper Digital Nomad Identity PROS",
+        "date": "2019-03-01",
         "content": "Paper with Dubravka Cecez-Kecmanovic and Daniel Schlagwein on digital nomads and identity accepted for presentation at the 11th International Symposium on Process Organization Studies."
     },
     {
-        "date": "Aug&nbsp;2018",
+        "title": "Paper Design Science Research ICIS",
+        "date": "2018-08-01",
         "content": "Paper with Gerit Wagner and Guido Schryen on design science research accepted for presentation at the 39th International Conference on Information Systems."
     },
     {
-        "date": "Jul&nbsp;2018",
+        "title": "KIN Summer School",
+        "date": "2018-07-01",
         "content": "Extremely grateful to attend the <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://www.kinresearch.nl/research/kin-summer-school/'>KIN summer school</a> 2018. Inspiring faculty and enlightening discussions!"
     },
     {
-        "date": "Oct&nbsp;2017",
+        "title": "Christa-Lindner Award",
+        "date": "2017-10-01",
         "content": "Great news! I was granted the Christa-Lindner award for my Master's thesis at the University of Regensburg."
     },
     {
-        "date": "Aug&nbsp;2017",
+        "title": "Paper Scientific Impact of Literature Reviews ICIS",
+        "date": "2017-08-01",
         "content": "Paper with Gerit Wagner and Guido Schryen on the scientific impact of literature reviews accepted for presentation at the 38th International Conference on Information Systems."
     },
     {
-        "date": "Jul&nbsp;2017",
+        "title": "PhD UNSW Business School",
+        "date": "2017-07-01",
         "content": "Excited to start my PhD journey at the School of Information Systems and Technology Management, UNSW Business School."
     },
     {
-        "date": "Apr&nbsp;2017",
+        "title": "Scientia PhD Scholarship",
+        "date": "2017-04-01",
         "content": "Great news! I was awarded the prestigious Scientia PhD Scholarship to conduct my PhD studies at the University of New South Wales, Sydney."
     }
 ]
