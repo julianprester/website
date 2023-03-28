@@ -1,0 +1,23 @@
+---
+layout: base
+title: Notes | Julian Prester
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - notes
+    - links
+    - book
+permalink: /tags/{{ tag }}/
+---
+
+<h1 class="font-sans text-4xl font-bold mb-8">Tagged <span class="p-1 leading-loose bg-gray-200 dark:bg-gray-700 border rounded border-gray-300 dark:border-gray-500">{{ tag }}</span> </h1>
+<div class="markdown">
+  {% set taglist = collections[ tag ] %}
+  {% for post in taglist | reverse %}
+  <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+  {{ post.content | safe }}
+  {%- endfor -%}
+</div>
