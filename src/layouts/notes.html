@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16">
+    <div class="col-span-1 md:col-span-3">
+        <div class="markdown">
+            <h1>{{ title }}</h1>
+            {{ content | safe }}
+        </div>
+    </div>
+    <div class="col-span-1">
+        <p>This is <strong>{{ title }}</strong> by Julian Prester, posted on {{ page.date | dayMonthYearDateFromISO }}.
+        </p>
+        <p>
+            {%- for tag in tags -%}
+                {% if tag != 'notes' %}
+                    <a href="{{ '/tags/' + tag | url }}/" class="p-1 leading-loose bg-gray-200 dark:bg-gray-700 border rounded border-gray-300 dark:border-gray-500">{{ tag }}</a>
+                {% endif %}
+            {% endfor %}
+        </p>
+    </div>
+</div>

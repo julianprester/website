@@ -1,0 +1,31 @@
+---
+permalink: notes.xml
+eleventyExcludeFromCollections: true
+metadata:
+  title: "Julian's Weblog: Notes"
+  language: en
+  url: https://julianprester.com/
+  author:
+    name: Julian Prester
+    email: julian.prester@sydney.edu.au
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ metadata.title }}</title>
+    <link>{{ metadata.url }}</link>
+    <atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
+    <description>{{ metadata.subtitle }}</description>
+    <language>{{ metadata.language }}</language>
+    {%- for note in collections.notes | reverse %}
+    <item>
+      <title>{{ note.data.title }}</title>
+      <link>{{ note.url }}</link>
+      <description>{{ note.content }}</description>
+      <pubDate>{{ note.date | dateToRfc822 }}</pubDate>
+      <dc:creator>{{ metadata.author.name }}</dc:creator>
+      <guid>{{ note.url | absoluteUrl(metadata.url) }}</guid>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>
