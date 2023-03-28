@@ -4,12 +4,21 @@ title: Bookshelf | Julian Prester
 permalink: /bookshelf/
 eleventyNavigation:
   key: Bookshelf
-  order: 4
+  order: 5
 ---
-<div class="w-full text-center mb-16">
+<div class="w-full text-center mb-8">
   <h1 class="font-sans text-4xl font-bold mb-8">My Bookshelf</h1>
   <p>Books that my research draws from and that I think are worth reading.</p>
   <p>Accompanied by my loose and opinionated reading notes.</p>
+</div>
+<div class="w-full flex justify-end mb-8">
+  <a href="{{ '/bookshelf.xml' | url }}">
+    <svg class="inline w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+      <circle cx="68" cy="189" r="24"></circle>
+      <path d="M160 213h-34a82 82 0 0 0-82-82V97a116 116 0 0 1 116 116z"></path>
+      <path d="M184 213A140 140 0 0 0 44 73V38a175 175 0 0 1 175 175z"></path>
+    </svg>
+  </a>
 </div>
 <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 px-16 sm:px-0">
   {%- for book in collections.book | reverse -%}
