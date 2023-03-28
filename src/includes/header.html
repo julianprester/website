@@ -8,7 +8,7 @@
                 <path
                     d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
             </svg>
-            <span class="text-base font-mono hidden xs:flex" data-nosnippet>{{ meta.email }}</span>
+            <span class="text-base font-mono hidden lg:flex" data-nosnippet>{{ meta.email }}</span>
         </a>
     </div>
     <div class="flex space-x-3 md:hidden">
@@ -21,6 +21,13 @@
                     d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
             </svg>
         </button>
+        <a href="{{ '/all.xml' | url }}">
+            <svg class="inline w-6 h-6 fill-current justify-self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <circle cx="68" cy="189" r="24"></circle>
+                <path d="M160 213h-34a82 82 0 0 0-82-82V97a116 116 0 0 1 116 116z"></path>
+                <path d="M184 213A140 140 0 0 0 44 73V38a175 175 0 0 1 175 175z"></path>
+            </svg>
+        </a>
         <button @click="isOpen = !isOpen" aria-label="Open navigation bar">
             <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path :class="{ 'hidden': !isOpen }" fill-rule="evenodd" clip-rule="evenodd"
@@ -30,7 +37,7 @@
             </svg>
         </button>
     </div>
-    <div class="w-full md:flex md:items-center md:w-auto" :class="{ 'hidden': !isOpen }">
+    <div class="w-full md:flex md:items-center md:w-auto md:space-x-4" :class="{ 'hidden': !isOpen }">
         {% set navPages = collections.all | eleventyNavigation %}
         <ul class="md:flex justify-end items-center md:space-x-4 lg:space-x-8 space-y-4 md:space-y-0 pt-6 md:pt-0">
             {%- for entry in navPages %}
@@ -40,7 +47,8 @@
             </li>
             {%- endfor %}
         </ul>
-        <button class="hidden md:flex ml-8" @click="darkMode = !darkMode" @click="isOpen = false" aria-label="Switch dark mode">
+        <button class="hidden md:flex" @click="darkMode = !darkMode" @click="isOpen = false"
+            aria-label="Switch dark mode">
             <svg class="h-6 w-6 fill-current justify-self-center" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24">
                 <path :class="{ 'hidden': darkMode }" fill-rule="evenodd" clip-rule="evenodd"
@@ -49,5 +57,12 @@
                     d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
             </svg>
         </button>
+        <a class="hidden md:flex" href="{{ '/all.xml' | url }}">
+            <svg class="inline w-6 h-6 fill-current justify-self-center" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <circle cx="68" cy="189" r="24"></circle>
+                <path d="M160 213h-34a82 82 0 0 0-82-82V97a116 116 0 0 1 116 116z"></path>
+                <path d="M184 213A140 140 0 0 0 44 73V38a175 175 0 0 1 175 175z"></path>
+            </svg>
+        </a>
     </div>
 </nav>
