@@ -2,6 +2,10 @@
 @tailwind components;
 
 .markdown {
+    & h1 {
+        @apply text-4xl font-bold font-sans mb-8;
+    }
+
     & p {
         @apply my-6;
     }
