@@ -3,5 +3,7 @@ layout: base
 ---
 
 <div class="markdown">
+    <a href="{{ url }}">{{ title }}</a>
     {{ content | safe }}
+    <p><i>Posted on {{ page.date | dayMonthYearDateFromISO }}</i></p>
 </div>
