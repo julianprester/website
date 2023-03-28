@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const eleventyImagePlugin = require("@11ty/eleventy-img");
+const eleventySyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 async function imageShortcode(src, alt, sizes = "100vw") {
   if (alt === undefined) {
@@ -42,8 +44,26 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat('LLL yyyy');
   });
 
+  eleventyConfig.addFilter("dayMonthYearDateFromISO", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat('dd LLL yyyy');
+  });
+
+  eleventyConfig.addFilter("rawText", (content) => {
+    return content.replace(/<\/?[^>]+(>|$)/g, "");
+  });
+
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(eleventySyntaxHighlight);
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.addCollection("allNotes", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/notes/*.md");
+  });
+
+  eleventyConfig.addCollection("allWriting", function (collectionApi) {
+    return collectionApi.getFilteredByGlob(["src/notes/*.md", "src/bookshelf/*.md"]);
+  });
 
   eleventyConfig.setBrowserSyncConfig({
     snippetOptions: {
