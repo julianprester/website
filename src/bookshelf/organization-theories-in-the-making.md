@@ -8,4 +8,4 @@ link: https://www.goodreads.com/book/show/62871519-organization-theories-in-the-
 date: 2023-04-01
 ---
 
-Text
+Coming soon...
