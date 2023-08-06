@@ -6,6 +6,14 @@
         @apply text-4xl font-bold font-sans mb-8;
     }
 
+    & h2 {
+        @apply text-2xl font-bold font-sans mb-4;
+    }
+
+    & h3 {
+        @apply text-2xl font-sans mb-4;
+    }
+
     & p {
         @apply my-6;
     }
