@@ -2,7 +2,7 @@
 title: Blogging Infrastructure
 tags:
   - draft
-  - blogging
+  - writing
   - markdown
 ---
 
