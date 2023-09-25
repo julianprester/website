@@ -5,7 +5,8 @@
   "scripts": {
     "clean": "rm -rf public",
     "start": "eleventy --serve & postcss src/styles/*.css --dir public/css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss src/styles/*.css --dir public/css"
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss src/styles/*.css --dir public/css",
+    "grab": "node util/grab_links.js"
   },
   "keywords": [],
   "author": "",
