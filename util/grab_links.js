@@ -38,7 +38,7 @@ function slugify(str) {
 }
 
 function write_message(message) {
-    const data = `---\ntitle: ${message.title}\nurl: ${message.url}\ntags:\n  - links\n---\n\n${message.text}\n`
+    const data = `---\ntitle: ${message.title}\nurl: ${message.url}\ndate: ${new Date().toISOString().substring(0, 10)}\ntags:\n  - links\n---\n\n${message.text}\n`
     fs.writeFileSync(`src/links/${message.slug}.md`, data)
 }
 
