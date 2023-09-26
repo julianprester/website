@@ -1,12 +1,9 @@
 ---
 title: AI is most important tech advance in decades
+date: 2023-03-21
 url: https://www.bbc.com/news/technology-65032848
 tags:
   - links
-  - generativeai
-  - billgates
-  - progress
-  - transformation
 ---
 
 Generative AI seems to be widely believed to be a technology that will advance progress in a way that only few technologies do.

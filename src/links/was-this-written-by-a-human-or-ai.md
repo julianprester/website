@@ -1,11 +1,9 @@
 ---
 title: Was this written by a human or AI?
+date: 2023-03-16
 url: https://hai.stanford.edu/news/was-written-human-or-ai-tsu
 tags:
   - links
-  - generativeai
-  - detection
-  - aiaccents
 ---
 
 Humans are terrible at identifying AI generated content; only slightly better than a coin flip and this is only going to get worse as AI models become better.

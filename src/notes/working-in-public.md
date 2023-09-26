@@ -1,5 +1,6 @@
 ---
 title: Working in Public (as an Academic)
+date: 2023-09-25
 tags:
   - notes
   - writing
