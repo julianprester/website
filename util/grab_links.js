@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 function get_messages() {
-    fetch('https://gotify.julianprester.com/application/2/message', {
+    fetch(process.env.GOTIFY_URL, {
         headers: {
             "Authorization": `Bearer ${process.env.GOTIFY_TOKEN}`
         }
@@ -43,7 +43,7 @@ function write_message(message) {
 }
 
 function delete_messages() {
-    fetch('https://gotify.julianprester.com/application/2/message', {
+    fetch(process.env.GOTIFY_URL, {
         method: 'DELETE',
         headers: {
             "Authorization": `Bearer ${process.env.GOTIFY_TOKEN}`
