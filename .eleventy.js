@@ -58,11 +58,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addCollection("allNotes", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/notes/*.md");
+    return collectionApi.getFilteredByGlob("src/writing/*.md");
   });
 
   eleventyConfig.addCollection("allWriting", function (collectionApi) {
-    return collectionApi.getFilteredByGlob(["src/notes/*.md", "src/bookshelf/*.md"]);
+    return collectionApi.getFilteredByGlob(["src/writing/*.md", "src/bookshelf/*.md"]);
   });
 
   eleventyConfig.setBrowserSyncConfig({
