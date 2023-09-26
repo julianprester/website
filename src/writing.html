@@ -1,7 +1,7 @@
 ---
 layout: base
-title: Notes | Julian Prester
-permalink: /notes/
+title: Writing | Julian Prester
+permalink: /writing/
 eleventyNavigation:
   key: Writing
   order: 4
@@ -11,7 +11,7 @@ eleventyNavigation:
   <div class="md:col-span-2">
     <p class="mb-4">
       Latest ideas 
-      <a href="{{ '/notes.xml' | url }}">
+      <a href="{{ '/writing.xml' | url }}">
         <svg class="inline w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
           <circle cx="68" cy="189" r="24"></circle>
           <path d="M160 213h-34a82 82 0 0 0-82-82V97a116 116 0 0 1 116 116z"></path>
@@ -20,7 +20,7 @@ eleventyNavigation:
       </a>
     </p>
     <div class="markdown">
-      {%- for post in collections.notes | reverse -%}
+      {%- for post in collections.published | reverse -%}
       <h1><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
       {{ post.content | safe }}
       {%- endfor -%}

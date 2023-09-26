@@ -1,8 +1,8 @@
 ---
-permalink: notes.xml
+permalink: writing.xml
 eleventyExcludeFromCollections: true
 metadata:
-  title: "Julian's Weblog: Notes"
+  title: "Julian's Weblog: Writing"
   language: en
   url: https://julianprester.com/
   author:
@@ -17,14 +17,14 @@ metadata:
     <atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
     <description>{{ metadata.subtitle }}</description>
     <language>{{ metadata.language }}</language>
-    {%- for note in collections.notes | reverse %}
+    {%- for writing in collections.writing | reverse %}
     <item>
-      <title>{{ note.data.title }}</title>
-      <link>{{ note.url }}</link>
-      <description>{{ note.content }}</description>
-      <pubDate>{{ note.date | dateToRfc822 }}</pubDate>
+      <title>{{ writing.data.title }}</title>
+      <link>{{ writing.url }}</link>
+      <description>{{ writing.content }}</description>
+      <pubDate>{{ writing.date | dateToRfc822 }}</pubDate>
       <dc:creator>{{ metadata.author.name }}</dc:creator>
-      <guid>{{ note.url | absoluteUrl(metadata.url) }}</guid>
+      <guid>{{ writing.url | absoluteUrl(metadata.url) }}</guid>
     </item>
     {%- endfor %}
   </channel>

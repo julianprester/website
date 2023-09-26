@@ -14,7 +14,7 @@ layout: base
         </p>
         <p>
             {%- for tag in tags -%}
-                {% if tag != 'notes' %}
+                {% if tag != 'published' %}
                     <a href="{{ '/tags/' + tag | url }}/" class="p-1 leading-loose bg-gray-200 dark:bg-gray-700 border rounded border-gray-300 dark:border-gray-500">{{ tag }}</a>
                 {% endif %}
             {% endfor %}

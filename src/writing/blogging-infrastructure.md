@@ -2,8 +2,6 @@
 title: Blogging Infrastructure
 tags:
   - draft
-  - writing
-  - markdown
 ---
 
 - markdown based
