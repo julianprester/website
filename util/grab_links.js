@@ -1,5 +1,5 @@
 const fs = require('fs')
-const yaml = require('js-yaml')
+const yaml = require('yaml')
 
 function get_messages() {
     fetch(process.env.GOTIFY_URL, {
@@ -14,7 +14,7 @@ function get_messages() {
                 write_message(parsed)
             }
         })
-        .then(() => delete_messages())
+        // .then(() => delete_messages())
         .catch(error => console.error(error))
 }
 
@@ -46,7 +46,7 @@ function write_message(message) {
     const frontmatter = message
     delete frontmatter.text
     delete frontmatter.slug
-    const data = `---\n${yaml.dump(frontmatter)}---\n\n${text}\n`
+    const data = `---\n${yaml.stringify(frontmatter)}---\n\n${text}\n`
     fs.writeFileSync(`src/links/${slug}.md`, data)
 }
 
