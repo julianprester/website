@@ -14,7 +14,7 @@ function get_messages() {
                 write_message(parsed)
             }
         })
-        // .then(() => delete_messages())
+        .then(() => delete_messages())
         .catch(error => console.error(error))
 }
 
