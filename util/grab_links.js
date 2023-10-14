@@ -1,4 +1,5 @@
 const fs = require('fs')
+const yaml = require('js-yaml')
 
 function get_messages() {
     fetch(process.env.GOTIFY_URL, {
@@ -24,7 +25,9 @@ function parse_message(message) {
         "title": match[1],
         "url": match[2],
         "text": message.title,
-        "slug": slugify(match[1])
+        "slug": slugify(match[1]),
+        "date": new Date().toISOString().substring(0, 10),
+        "tags": ["links"]
     }
 }
 
@@ -38,8 +41,13 @@ function slugify(str) {
 }
 
 function write_message(message) {
-    const data = `---\ntitle: ${message.title}\nurl: ${message.url}\ndate: ${new Date().toISOString().substring(0, 10)}\ntags:\n  - links\n---\n\n${message.text}\n`
-    fs.writeFileSync(`src/links/${message.slug}.md`, data)
+    const text = message.text
+    const slug = message.slug
+    const frontmatter = message
+    delete frontmatter.text
+    delete frontmatter.slug
+    const data = `---\n${yaml.dump(frontmatter)}---\n\n${text}\n`
+    fs.writeFileSync(`src/links/${slug}.md`, data)
 }
 
 function delete_messages() {
