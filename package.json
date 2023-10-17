@@ -6,7 +6,7 @@
     "clean": "rm -rf public",
     "start": "eleventy --serve & postcss src/styles/*.css --dir public/css --watch",
     "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss src/styles/*.css --dir public/css",
-    "grab": "node util/grab_links.js"
+    "grab": "GOTIFY_TOKEN='CcF5CeI4M28X5Yq' GOTIFY_URL='https://gotify.julianprester.com/application/1/message' node util/grab_links.js"
   },
   "keywords": [],
   "author": "",
@@ -21,9 +21,7 @@
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
-    "tailwindcss": "^3.3.3"
-  },
-  "dependencies": {
+    "tailwindcss": "^3.3.3",
     "yaml": "^2.3.3"
   }
 }
