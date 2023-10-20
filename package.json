@@ -6,7 +6,7 @@
     "clean": "rm -rf public",
     "start": "eleventy --serve & postcss src/styles/*.css --dir public/css --watch",
     "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss src/styles/*.css --dir public/css",
-    "grab": "GOTIFY_TOKEN='CcF5CeI4M28X5Yq' GOTIFY_URL='https://gotify.julianprester.com/application/1/message' node util/grab_links.js"
+    "grab": "node util/grab_links.js"
   },
   "keywords": [],
   "author": "",
