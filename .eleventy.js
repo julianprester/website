@@ -3,6 +3,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const eleventyImagePlugin = require("@11ty/eleventy-img");
 const eleventySyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdownIt = require("markdown-it");
 
 async function imageShortcode(src, alt, sizes = "100vw") {
   if (alt === undefined) {
@@ -51,6 +52,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("rawText", (content) => {
     return content.replace(/<\/?[^>]+(>|$)/g, "");
   });
+
+  eleventyConfig.setLibrary("md", markdownIt({
+    html: true,
+    typographer: true
+  }));
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(eleventySyntaxHighlight);
