@@ -19,14 +19,14 @@ These sites display the same content to every visitor and do not require a datab
 This type of website excels in delivering speed, reliability, and security.
 For blogs and personal websites, the content often doesn't change rapidly or dynamically, making static sites a perfect fit.
 
-Eleventy is the static site generator I use for this website.
+[Eleventy](https://www.11ty.dev/) is the static site generator I use for this website.
 Eleventy prides itself on its top-notch performance.
 What I also like about it is that it doesn't tie you to any client-side JavaScript frameworks.
 It also supports several template languages.
 
 Eleventy is the core of what is called the ElevenTEA stack.
 Eleventy is used to generate the static websites.
-The 'T' stands for TailwindCSS.
+The 'T' stands for [TailwindCSS](https://tailwindcss.com/).
 Tailwind is a CSS framework that consists of a set of pre-defined utility classes that can be composed to build any website design, directly in your HTML files.
 For example, we can use several utility classes on a button:
 
@@ -44,7 +44,7 @@ And the button will look like this:
 
 While this long list of css classes may look confusing at first, but after some time of working with Tailwind this becomes so convenient.
 
-Lastly, the 'A' in the ElevenTEA stack stands for AlpineJS.
+Lastly, the 'A' in the ElevenTEA stack stands for [AlpineJS](https://alpinejs.dev/).
 What Tailwind is for CSS, Alpine is for Javascript.
 My personal website doesn't use a lot of Javascript.
 That's why I wouldn't want to use a huge frontend framework.
