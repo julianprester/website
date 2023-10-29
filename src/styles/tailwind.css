@@ -27,11 +27,11 @@
     }
 
     & ul {
-        @apply list-disc list-inside pl-6;
+        @apply list-disc list-outside pl-6;
     }
 
     & ol {
-        @apply list-decimal list-inside pl-6;
+        @apply list-decimal list-outside pl-6;
     }
 }
 
