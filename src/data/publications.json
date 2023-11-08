@@ -15,7 +15,7 @@
         "year": 2023,
         "outlet": "Journal of Decision Systems",
         "info": "forthcoming",
-        "url": "https://www.tandfonline.com/doi/full/10.1080/12460125.2023.2197701"
+        "url": "https://doi.org/10.1080/12460125.2023.2197701"
     },
     {
         "type": "presentation",
@@ -69,7 +69,7 @@
         "year": 2021,
         "outlet": "The Journal of Strategic Information Systems",
         "info": "30(4)",
-        "url": "https://www.sciencedirect.com/science/article/pii/S096386872100041X"
+        "url": "https://doi.org/10.1016/j.jsis.2021.101694"
     },
     {
         "type": "conference",
@@ -87,7 +87,7 @@
         "year": 2021,
         "outlet": "Information & Management",
         "info": "58(3)",
-        "url": "https://www.sciencedirect.com/science/article/pii/S037872062100001X"
+        "url": "https://doi.org/10.1016/j.im.2021.103427"
     },
     {
         "type": "journal",
@@ -96,7 +96,7 @@
         "year": 2021,
         "outlet": "Decision Support Systems",
         "info": 140,
-        "url": "https://www.sciencedirect.com/science/article/pii/S0167923620301871"
+        "url": "https://doi.org/10.1016/j.dss.2020.113432"
     },
     {
         "type": "conference",
@@ -132,7 +132,7 @@
         "year": 2020,
         "outlet": "Computers & Security",
         "info": 88,
-        "url": "https://www.sciencedirect.com/science/article/pii/S016740481830854X"
+        "url": "https://doi.org/10.1016/j.cose.2019.101610"
     },
     {
         "type": "conference",
