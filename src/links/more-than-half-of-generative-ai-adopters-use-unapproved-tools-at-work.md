@@ -6,4 +6,4 @@ tags:
   - links
 ---
 
-Deviance seems to be an important topic for the future of work. AI is being adopted without formal policies. we are seeing the same with work-from-anywhere arrangements.
+Deviance seems to be an important topic for the future of work. AI is being adopted without formal policies. We are seeing the same with work-from-anywhere arrangements.
