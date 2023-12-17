@@ -1,5 +1,7 @@
 const fs = require('fs')
+const path = require('path')
 const yaml = require('yaml')
+const matter = require('gray-matter')
 
 function get_messages() {
     fetch(process.env.GOTIFY_URL, {
@@ -27,6 +29,7 @@ function parse_message(message) {
         "text": message.title,
         "slug": slugify(match[1]),
         "date": new Date().toISOString().substring(0, 10),
+        "published": getNextPublicationDate('src/links'),
         "tags": ["links"]
     }
 }
@@ -40,7 +43,25 @@ function slugify(str) {
         .replace(/^-+|-+$/g, "");
 }
 
-function write_message(message) {
+function getNextPublicationDate(dir) {
+    const files = fs.readdirSync(dir)
+    let latestDate = new Date()
+
+    for (const file of files) {
+        const content = fs.readFileSync(path.join(dir, file), 'utf8')
+        const frontmatter = matter(content).data
+
+        if (frontmatter.published && new Date(frontmatter.published) > latestDate) {
+            latestDate = new Date(frontmatter.published)
+        }
+    }
+
+    latestDate.setDate(latestDate.getDate() + 1)
+
+    return latestDate.toISOString().slice(0, 10)
+}
+
+function write_message(message) { 
     const text = message.text
     const slug = message.slug
     const frontmatter = message
