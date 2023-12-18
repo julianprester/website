@@ -13,6 +13,9 @@ function get_messages() {
         .then(response => {
             for (message of response.messages) {
                 const parsed = parse_message(message)
+                if (parsed.text.length <= 256) {
+                    delete parsed.published
+                }
                 write_message(parsed)
             }
         })
