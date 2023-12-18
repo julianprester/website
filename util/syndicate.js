@@ -25,6 +25,7 @@ function getPost() {
             }
         }
     }
+    return null
 }
 
 function publishToTwitter(content) {
@@ -32,4 +33,6 @@ function publishToTwitter(content) {
 }
 
 const post = getPost()
-publishToTwitter(post)
+if (post) {
+    publishToTwitter(post)
+}
