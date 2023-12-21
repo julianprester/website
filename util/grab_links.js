@@ -26,13 +26,15 @@ function get_messages() {
 function parse_message(message) {
     const re = /(.*?) (https?:\/\/.*?) via @wallabagapp/
     const match = message.message.match(re)
+    const nextPublicationDate = getNextPublicationDate('src/links')
+    console.log(nextPublicationDate)
     return {
         "title": match[1],
         "url": match[2],
         "text": message.title,
         "slug": slugify(match[1]),
         "date": new Date().toISOString().substring(0, 10),
-        "published": getNextPublicationDate('src/links'),
+        "published": nextPublicationDate,
         "tags": ["links"]
     }
 }
@@ -63,6 +65,7 @@ function getNextPublicationDate(dir) {
     console.log(latestDate)
     latestDate.setDate(latestDate.getDate() + 1)
     console.log(latestDate)
+    console.log(latestDate.toISOString().slice(0, 10))
     return latestDate.toISOString().slice(0, 10)
 }
 
