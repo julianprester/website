@@ -13,14 +13,13 @@ function get_messages() {
         .then(response => {
             for (message of response.messages) {
                 const parsed = parse_message(message)
-                console.log(parsed)
                 if (parsed.text.length <= 256) {
                     delete parsed.published
                 }
                 write_message(parsed)
             }
         })
-        // .then(() => delete_messages())
+        .then(() => delete_messages())
         .catch(error => console.error(error))
 }
 
