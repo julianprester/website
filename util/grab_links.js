@@ -48,6 +48,7 @@ function slugify(str) {
 
 function getNextPublicationDate(dir) {
     const files = fs.readdirSync(dir)
+    console.log(files)
     let latestDate = new Date()
 
     for (const file of files) {
