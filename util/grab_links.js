@@ -14,7 +14,7 @@ function get_messages() {
             for (message of response.messages) {
                 const parsed = parse_message(message)
                 if (parsed.text.length <= 256) {
-                    delete parsed.published
+                    delete parsed.syndicated
                 }
                 write_message(parsed)
             }
@@ -54,8 +54,8 @@ function getNextPublicationDate(dir) {
         const content = fs.readFileSync(path.join(dir, file), 'utf8')
         const frontmatter = matter(content).data
 
-        if (frontmatter.published && new Date(frontmatter.published) > latestDate) {
-            latestDate = new Date(frontmatter.published)
+        if (frontmatter.syndicated && new Date(frontmatter.syndicated) > latestDate) {
+            latestDate = new Date(frontmatter.syndicated)
         }
     }
     latestDate.setDate(latestDate.getDate() + 1)

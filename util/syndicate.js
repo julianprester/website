@@ -19,8 +19,8 @@ function getPost() {
     for (const file of files) {
         const content = fs.readFileSync(path.join('src/links', file), 'utf8')
         const frontmatter = matter(content).data
-        if (frontmatter.published) {
-            if (frontmatter.published.toISOString().slice(0, 10) === today) {
+        if (frontmatter.syndicated) {
+            if (frontmatter.syndicated.toISOString().slice(0, 10) === today) {
                 return content
             }
         }
@@ -35,4 +35,6 @@ function publishToTwitter(content) {
 const post = getPost()
 if (post) {
     publishToTwitter(post)
+} else {
+    console.log('No posts to publish')
 }
