@@ -48,20 +48,21 @@ function slugify(str) {
 
 function getNextPublicationDate(dir) {
     const files = fs.readdirSync(dir)
-    console.log(files)
     let latestDate = new Date()
-
+    
     for (const file of files) {
         const content = fs.readFileSync(path.join(dir, file), 'utf8')
+        console.log(content)
         const frontmatter = matter(content).data
+        console.log(frontmatter)
 
         if (frontmatter.published && new Date(frontmatter.published) > latestDate) {
             latestDate = new Date(frontmatter.published)
         }
     }
-
+    console.log(latestDate)
     latestDate.setDate(latestDate.getDate() + 1)
-
+    console.log(latestDate)
     return latestDate.toISOString().slice(0, 10)
 }
 
