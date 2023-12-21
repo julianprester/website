@@ -13,6 +13,7 @@ function get_messages() {
         .then(response => {
             for (message of response.messages) {
                 const parsed = parse_message(message)
+                console.log(parsed)
                 if (parsed.text.length <= 256) {
                     delete parsed.published
                 }
@@ -35,6 +36,7 @@ function parse_message(message) {
         "slug": slugify(match[1]),
         "date": new Date().toISOString().substring(0, 10),
         "published": nextPublicationDate,
+        "test": nextPublicationDate,
         "tags": ["links"]
     }
 }
