@@ -3,6 +3,7 @@ title: American workers keep proving they don’t need to return to the office
   be productive
 url: https://fortune.com/2023/12/09/what-is-fueling-productivity-boom-four-reasons/
 date: 2023-12-21
+syndicated: 2023-12-22
 tags:
   - links
 ---
