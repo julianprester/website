@@ -13,7 +13,7 @@ function get_messages() {
         .then(response => {
             for (message of response.messages) {
                 const parsed = parse_message(message)
-                if (parsed.text.length <= 256) {
+                if (parsed.text.length >= 256) {
                     delete parsed.syndicated
                 }
                 write_message(parsed)
