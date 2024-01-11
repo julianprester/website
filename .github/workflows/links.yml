@@ -3,7 +3,7 @@ name: get links from gotify
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: '01 21 * * *'
 
 jobs:
   grab:
