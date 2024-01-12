@@ -58,7 +58,7 @@ function getNextPublicationDate(dir) {
             latestDate = new Date(frontmatter.syndicated)
         }
     }
-    latestDate.setDate(latestDate.getDate() + 1)
+    latestDate.setDate(latestDate.getDate())
     return latestDate.toISOString().slice(0, 10)
 }
 
