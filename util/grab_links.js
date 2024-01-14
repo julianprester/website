@@ -56,9 +56,9 @@ function getNextPublicationDate(dir) {
 
         if (frontmatter.syndicated && new Date(frontmatter.syndicated) > latestDate) {
             latestDate = new Date(frontmatter.syndicated)
+            latestDate.setDate(latestDate.getDate() + 1)
         }
     }
-    latestDate.setDate(latestDate.getDate())
     return latestDate.toISOString().slice(0, 10)
 }
 
