@@ -2,7 +2,7 @@
 title: On the Societal Impact of Open Foundation Models
 url: https://crfm.stanford.edu/open-fms/
 date: 2024-03-04
-syndicated: 2024-03-04
+syndicated: 2024-03-06
 tags:
   - links
 ---
