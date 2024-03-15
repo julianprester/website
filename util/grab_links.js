@@ -48,13 +48,13 @@ function slugify(str) {
 
 function getNextPublicationDate(dir) {
     const files = fs.readdirSync(dir)
-    let latestDate = new Date()
+    let latestDate = new Date(new Date().setUTCHours(0,0,0,0))
     
     for (const file of files) {
         const content = fs.readFileSync(path.join(dir, file), 'utf8')
         const frontmatter = matter(content).data
 
-        if (frontmatter.syndicated && new Date(frontmatter.syndicated) > latestDate) {
+        if (frontmatter.syndicated && new Date(frontmatter.syndicated) >= latestDate) {
             latestDate = new Date(frontmatter.syndicated)
             latestDate.setDate(latestDate.getDate() + 1)
         }
