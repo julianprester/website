@@ -7,4 +7,4 @@ tags:
   - links
 ---
 
-Epoch estimates that AI training runs could reach GPT-4-like scale increases by 2030, primarily constrained by power and chip production. While technically feasible, realizing this potential hinges on massive investments and infrastructure expansion. Is this AI's moonshot moment, or another hype cycle?
+Epoch estimates that AI training runs could reach GPT-4-like scale increases by 2030, primarily constrained by power and chip production. This requires massive investments and infrastructure expansion.
