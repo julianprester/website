@@ -7,4 +7,4 @@ tags:
   - links
 ---
 
-The "homework apocalypse" is here, with AI doing the heavy lifting for students.  While teachers struggle to detect AI-generated work, students are developing "illusory knowledge," hindering their learning. We need to embrace AI's potential for education, but also address its pitfalls.
+The "homework apocalypse" is here, with AI doing the heavy lifting for students.  While teachers struggle to detect AI-generated work, students are practicing a kind of "illusory learning."
