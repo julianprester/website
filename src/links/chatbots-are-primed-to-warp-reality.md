@@ -7,4 +7,4 @@ tags:
   - links
 ---
 
-AI chatbots are being integrated everywhere and might be more persuasive than we realize. Research shows they can even implant false memories by mimicking human conversation techniques, making them powerful tools for manipulation, especially as they're increasingly used for information gathering.
+AI chatbots are being integrated everywhere and might be more persuasive than we realize. Research shows they can even implant false memories by mimicking human conversation techniques.
