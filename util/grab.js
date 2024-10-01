@@ -148,7 +148,7 @@ const createFile = async (repo, record, tweet) => {
     const content = `---
 title: '${record.title}'
 url: ${record.url}
-date: ${new Date()}
+date: ${new Date().toISOString()}
 thumbnail: ${record.preview_picture}
 tags:
   - links
