@@ -3,7 +3,7 @@ title: >-
   Title:We Have a Package for You! A Comprehensive Analysis of Package
   Hallucinations by Code Generating LLMs
 url: 'https://arxiv.org/abs/2406.10279'
-date: 'Tue Oct 01 2024 12:03:36 GMT+0000 (Coordinated Universal Time)'
+date: 2024-10-01T12:03:36.000Z
 thumbnail: 'https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png'
 tags:
   - links
