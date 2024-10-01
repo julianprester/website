@@ -1,9 +1,10 @@
 ---
 title: Remote work is starting to hit office rents
-date: 2023-03-22
-url: https://www.axios.com/2023/03/22/remote-work-wf-office-rents-decline
+date: 2023-03-22T00:00:00.000Z
+url: 'https://www.axios.com/2023/03/22/remote-work-wf-office-rents-decline'
 tags:
   - links
+syndicated: 2024-10-20T03:00:00.000Z
 ---
 
 It took some time, but it seems that office rents are starting to reflect the shift to more remote work.
