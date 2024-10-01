@@ -1,7 +1,9 @@
-const fs = require('fs')
-const path = require('path')
-const matter = require('gray-matter')
-const { TwitterApi } = require("twitter-api-v2")
+import fs from 'fs/promises';
+import path from 'path';
+import matter from 'gray-matter';
+import { TwitterApi } from 'twitter-api-v2';
+
+const LINKS_DIR = 'src/links';
 
 const client = new TwitterApi({
     appKey: process.env.TWITTER_APP_KEY,
@@ -11,30 +13,38 @@ const client = new TwitterApi({
     bearerToken: process.env.TWITTER_BEARER_TOKEN,
 })
 
-const rwClient = client.readWrite
+async function getTodayPost() {
+    const today = new Date().toISOString().slice(0, 10);
+    const files = await fs.readdir(LINKS_DIR);
 
-function getPost() {
-    const files = fs.readdirSync('src/links')
-    const today = new Date().toISOString().slice(0, 10)
     for (const file of files) {
-        const content = fs.readFileSync(path.join('src/links', file), 'utf8')
-        const frontmatter = matter(content).data
-        if (frontmatter.syndicated) {
-            if (frontmatter.syndicated.toISOString().slice(0, 10) === today) {
-                return content
-            }
+        const filePath = path.join(LINKS_DIR, file);
+        const content = await fs.readFile(filePath, 'utf8');
+        const post = matter(content);
+
+        if (post.data.syndicated?.toISOString().slice(0, 10) === today) {
+            return post;
         }
     }
-    return null
+
+    return null;
 }
 
-function publishToTwitter(content) {
-    rwClient.v2.tweet(`${matter(content).content}\n${matter(content).data.url}`)
+async function publishToTwitter(post) {
+    const tweet = `${post.content.trim()}\n${post.data.url}`;
+    await client.v2.tweet(tweet);
+    console.log('Tweet published successfully');
 }
 
-const post = getPost()
-if (post) {
-    publishToTwitter(post)
-} else {
-    console.log('No posts to publish')
-}
+(async () => {
+    try {
+        const post = await getTodayPost();
+        if (post) {
+            await publishToTwitter(post);
+        } else {
+            console.log('No posts to publish today');
+        }
+    } catch (error) {
+        console.error('Error publishing tweet:', error);
+    }
+})();

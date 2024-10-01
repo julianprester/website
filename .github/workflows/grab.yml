@@ -1,0 +1,27 @@
+name: grab articles from wallabag
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '01 21 * * *'
+
+jobs:
+  grab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run grab --if-present
+        env:
+          WALLABAG_URL: ${{ secrets.WALLABAG_URL }}
+          WALLABAG_CLIENT_ID: ${{ secrets.WALLABAG_CLIENT_ID }}
+          WALLABAG_CLIENT_SECRET: ${{ secrets.WALLABAG_CLIENT_SECRET }}
+          WALLABAG_USERNAME: ${{ secrets.WALLABAG_USERNAME }}
+          WALLABAG_PASSWORD: ${{ secrets.WALLABAG_PASSWORD }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
