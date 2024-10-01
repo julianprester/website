@@ -1,5 +1,4 @@
 {
     "layout": "links",
-    "eleventyExcludeFromCollections": true,
     "permalink": "links/{{ page.date | date: '%Y' }}/{{ title | slugify }}/"
 }
