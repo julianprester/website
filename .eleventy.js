@@ -71,6 +71,10 @@ export default function (eleventyConfig) {
     return collectionApi.getFilteredByGlob(["src/writing/*.md", "src/bookshelf/*.md"]);
   });
 
+  eleventyConfig.addCollection("exceptLinks", function (collectionApi) {
+    return collectionApi.getFilteredByGlob(["src/*.html", "src/writing/*.md", "src/bookshelf/*.md"]);
+  });
+
   eleventyConfig.setBrowserSyncConfig({
     snippetOptions: {
       rule: {
