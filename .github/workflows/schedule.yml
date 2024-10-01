@@ -3,6 +3,8 @@ name: schedule article syndication
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
 
 jobs:
   schedule:
