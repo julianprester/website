@@ -53,6 +53,8 @@ export default function (eleventyConfig) {
     return content.replace(/<\/?[^>]+(>|$)/g, "");
   });
 
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   eleventyConfig.setLibrary("md", markdownIt({
     html: true,
     typographer: true
