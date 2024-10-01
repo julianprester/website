@@ -1,9 +1,9 @@
-const { DateTime } = require("luxon");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const eleventyImagePlugin = require("@11ty/eleventy-img");
-const eleventySyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const markdownIt = require("markdown-it");
+import { DateTime } from "luxon";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import eleventyImagePlugin from "@11ty/eleventy-img";
+import eleventySyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import markdownIt from "markdown-it";
 
 async function imageShortcode(src, alt, sizes = "100vw") {
   if (alt === undefined) {
@@ -36,7 +36,7 @@ async function imageShortcode(src, alt, sizes = "100vw") {
       </picture>`;
 }
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addFilter("monthYearDateFromISO", (dateObj) => {
     return DateTime.fromISO(dateObj).toFormat('LLL yyyy');
   });
