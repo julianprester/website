@@ -1,6 +1,6 @@
 ---
 title: >-
-  Title:We Have a Package for You! A Comprehensive Analysis of Package
+  We Have a Package for You! A Comprehensive Analysis of Package
   Hallucinations by Code Generating LLMs
 url: 'https://arxiv.org/abs/2406.10279'
 date: 2024-10-01T12:03:36.000Z
