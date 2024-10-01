@@ -1,5 +1,50 @@
 [
     {
+        "type": "conference",
+        "title": "From Gutenberg to GPT: How Journalists Make Sense of Generative AI through Occupational History",
+        "authors": "<b>Prester J</b>, Dias M",
+        "year": 2024,
+        "outlet": "Proceedings of the 45th International Conference on Information Systems",
+        "info": "",
+        "url": "#"
+    },
+    {
+        "type": "conference",
+        "title": "Patient Adaptation Processes in Remote Monitoring Environments: A Computational Analysis",
+        "authors": "Liu N, <b>Prester J</b>, Kim, J",
+        "year": 2024,
+        "outlet": "Proceedings of the 45th International Conference on Information Systems",
+        "info": "",
+        "url": "#"
+    },
+    {
+        "type": "conference",
+        "title": "Understanding FemTech Affordances: Insights from an Analysis of Period and Fertility Apps",
+        "authors": "Guo M, Liu N, <b>Prester J</b>",
+        "year": 2024,
+        "outlet": "Proceedings of the 45th International Conference on Information Systems",
+        "info": "",
+        "url": "#"
+    },
+    {
+        "type": "presentation",
+        "title": "Relational Value of Time in Digital Work: The Challenge of Forming Relationships for Digital Nomads",
+        "authors": "<b>Prester J</b>, Cecez-Kecmanovic D, Schlagwein D",
+        "year": 2024,
+        "outlet": "15th International Symposium on Process Organization Studies",
+        "info": "",
+        "url": "https://julianprester.com/assets/pdf/pros2024.pdf"
+    },
+    {
+        "type": "presentation",
+        "title": "Communicating More, Less Frequently: Communication Fidelity Work in Remote Organising",
+        "authors": "<b>Prester J</b>, Marx J",
+        "year": 2023,
+        "outlet": "International Workshop on the Changing Nature of Work",
+        "info": "",
+        "url": "https://julianprester.com/assets/pdf/cnow2023.pdf"
+    },
+    {
         "type": "journal",
         "title": "Toward a Theory of Identity Performance in Unsettled Digital Work: The Becoming of 'Digital Nomads'",
         "authors": "<b>Prester J</b>, Cecez-Kecmanovic D, Schlagwein D",
