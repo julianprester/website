@@ -17,3 +17,11 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run schedule --if-present
+      - name: Commit and push if there were changes
+        run: |-
+          git config user.name "Post Scheduler"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "[SCHEDULER]: ${timestamp}" || exit 0
+          git push
