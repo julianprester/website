@@ -6,9 +6,9 @@
     "clean": "rm -rf public",
     "start": "eleventy --serve & postcss src/styles/*.css --dir public/css --watch",
     "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss src/styles/*.css --dir public/css",
-    "grab": "node util/grab.js",
-    "schedule": "node util/schedule.js",
-    "syndicate": "node util/syndicate.js"
+    "grab": "node util/grab_articles.js",
+    "schedule": "node util/schedule_articles.js",
+    "syndicate": "node util/syndicate_articles.js"
   },
   "keywords": [],
   "author": "",
