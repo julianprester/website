@@ -1,0 +1,22 @@
+name: send a status update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 8 * * *'
+
+jobs:
+  status-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run status --if-present
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GOTIFY_URL: ${{ secrets.GOTIFY_URL }}
+          GOTIFY_TOKEN: ${{ secrets.GOTIFY_TOKEN }}
