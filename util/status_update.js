@@ -100,7 +100,7 @@ async function sendGotifyMessage(title, message, priority = 5) {
 
 async function getStatusUpdate() {
     const prCount = await getPullRequest();
-    if (prCount > 30) {
+    if (prCount > 10) {
         sendGotifyMessage('julianprester.com [PR]', `There are ${prCount} open PRs. Write some tweets!`);
     }
     const lastScheduledDate = await getLastScheduledDate();
