@@ -7,4 +7,4 @@ tags:
   - links
 ---
 
-Return-to-office mandates aren't about productivity, it's a desperate attempt by elites to prop up the failing commercial real estate market they themselves inflated. They'll gladly sacrifice worker well-being & autonomy to protect their trillion-dollar gamble.
+Return-to-office mandates aren't about productivity. We see more and more evidence that it's a desperate attempt by organisations to protect their trillion-dollar commercial real estate gamble.
