@@ -7,4 +7,4 @@ tags:
   - links
 ---
 
-OpenAI's ChatGPT memory feature, meant to personalize interactions, was exploited to inject false memories & even exfiltrate user data. While a partial fix prevents data theft, the vulnerability to malicious memory manipulation remains, highlighting the security challenges of LLMs.
+Interesting how every feature built on top of LLMs seems to open a new attach vector. This time it's OpenAI's new ChatGPT memory feature, meant to personalize interactions, which was exploited to inject false memories & even exfiltrate user data.
