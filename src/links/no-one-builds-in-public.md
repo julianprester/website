@@ -7,4 +7,4 @@ tags:
   - links
 ---
 
-Is "building in public" becoming more about bragging than valuable insights?  When everyone's shouting about their revenue, does it still attract attention or just become noise?  Maybe focusing on the product itself is still the best strategy.
+Is "building in public" becoming more about bragging than valuable insights about someone's journey? When everyone's shouting about their revenue, does it still attract attention or just become noise? Interesting thoughts especially as we see more and more organizations also embrace an "organizing in public" mindset.
