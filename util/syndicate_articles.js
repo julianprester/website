@@ -2,6 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import matter from 'gray-matter';
 import { TwitterApi } from 'twitter-api-v2';
+import fetch from 'node-fetch';
 
 const LINKS_DIR = 'src/links';
 
