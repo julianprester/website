@@ -30,10 +30,16 @@ async function getTodayPost() {
     return null;
 }
 
+async function downloadImage(url) {
+    const response = await fetch(url);
+    return await response.buffer();
+}
+
 async function publishToTwitter(post) {
     let tweet = { text: post.content.trim() };
     if (post.data.thumbnail) {
-        const mediaId = await client.v1.uploadMedia(post.data.thumbnail);
+        const imageBuffer = await downloadImage(post.data.thumbnail);
+        const mediaId = await client.v1.uploadMedia(imageBuffer, { mimeType: 'image/jpeg' });
         tweet.media = { media_ids: [mediaId] };
     }
     await client.v2.tweetThread([
