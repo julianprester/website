@@ -36,6 +36,16 @@ async function downloadImage(url) {
     return await response.buffer();
 }
 
+async function decardLink(urlStr) {
+    const urlParts = urlStr.split('//');
+    const domainParts = urlParts[1].split('/');
+    const hostParts = domainParts[0].split('.');
+    const lastPart = hostParts.pop();
+    const modifiedHost = hostParts.join('.') + '\u200B.' + lastPart;
+    domainParts[0] = modifiedHost;
+    return urlParts[0] + '//' + domainParts.join('/');
+}
+
 async function publishToTwitter(post) {
     let tweet = { text: post.content.trim() };
     if (post.data.thumbnail) {
@@ -45,7 +55,7 @@ async function publishToTwitter(post) {
     }
     await client.v2.tweetThread([
         tweet,
-        `For the original article check out:\n${post.data.url}`,
+        `For the original article check out:\n${decardLink(post.data.url)}`,
     ]);
     console.log('Tweet published successfully');
 }
