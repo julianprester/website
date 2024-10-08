@@ -53,9 +53,10 @@ async function publishToTwitter(post) {
         const mediaId = await client.v1.uploadMedia(imageBuffer, { mimeType: 'image/jpeg' });
         tweet.media = { media_ids: [mediaId] };
     }
+    const decardedLink = await decardLink(post.data.url);
     await client.v2.tweetThread([
         tweet,
-        `For the original article check out:\n${decardLink(post.data.url)}`,
+        `For the original article check out:\n${decardedLink}`,
     ]);
     console.log('Tweet published successfully');
 }
