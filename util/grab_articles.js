@@ -2,6 +2,7 @@ import axios from 'axios';
 import { Octokit } from '@octokit/rest';
 import OpenAI from 'openai';
 import TurndownService from 'turndown';
+import matter from 'gray-matter';
 
 // Wallabag API credentials
 const WALLABAG_URL = process.env.WALLABAG_URL;
@@ -145,17 +146,12 @@ const createBranch = async (repo, record) => {
 };
 
 const createFile = async (repo, record, tweet) => {
-    const content = `---
-title: '${record.title}'
-url: ${record.url}
-date: ${new Date().toISOString()}
-thumbnail: ${record.preview_picture}
-tags:
-  - links
----
-
-${tweet}
-`;
+    const content = matter.stringify(tweet, {
+        title: record.title,
+        url: record.url,
+        date: new Date().toISOString(),
+        thumbnail: record.preview_picture,
+    });
 
     await octokit.repos.createOrUpdateFileContents({
         owner: repo.owner,
