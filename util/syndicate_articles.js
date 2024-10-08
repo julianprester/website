@@ -31,8 +31,15 @@ async function getTodayPost() {
 }
 
 async function publishToTwitter(post) {
-    const tweet = `${post.content.trim()}\n${post.data.url}`;
-    await client.v2.tweet(tweet);
+    let tweet = { text: post.content.trim() };
+    if (post.data.thumbnail) {
+        const mediaId = await client.v1.uploadMedia(post.data.thumbnail);
+        tweet.media = { media_ids: [mediaId] };
+    }
+    await client.v2.tweetThread([
+        tweet,
+        `For the original article check out:\n${post.data.url}`,
+    ]);
     console.log('Tweet published successfully');
 }
 
