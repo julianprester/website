@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { TwitterApi } from 'twitter-api-v2';
 import fetch from 'node-fetch';
+import sharp from 'sharp';
 
 const LINKS_DIR = 'src/links';
 
@@ -36,6 +37,12 @@ async function downloadImage(url) {
     return await response.buffer();
 }
 
+async function convertGifToJpg(buffer) {
+    return await sharp(buffer)
+        .toFormat('jpg')
+        .toBuffer();
+}
+
 async function decardLink(urlStr) {
     const urlParts = urlStr.split('//');
     const domainParts = urlParts[1].split('/');
@@ -50,6 +57,12 @@ async function publishToTwitter(post) {
     let tweet = { text: post.content.trim() };
     if (post.data.thumbnail) {
         const imageBuffer = await downloadImage(post.data.thumbnail);
+
+        const fileType = await sharp(imageBuffer).metadata();
+        if (fileType.format === 'gif') {
+            imageBuffer = await convertGifToJpg(imageBuffer);
+        }
+
         const mediaId = await client.v1.uploadMedia(imageBuffer, { mimeType: 'image/jpeg' });
         tweet.media = { media_ids: [mediaId] };
     }
