@@ -56,7 +56,7 @@ async function decardLink(urlStr) {
 async function publishToTwitter(post) {
     let tweet = { text: post.content.trim() };
     if (post.data.thumbnail) {
-        const imageBuffer = await downloadImage(post.data.thumbnail);
+        let imageBuffer = await downloadImage(post.data.thumbnail);
 
         const fileType = await sharp(imageBuffer).metadata();
         if (fileType.format === 'gif') {
