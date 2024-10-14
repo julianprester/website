@@ -7,6 +7,4 @@ tags:
 syndicated: 2024-10-25T03:00:00.000Z
 ---
 
-Humans are terrible at identifying AI generated content; only slightly better than a coin flip and this is only going to get worse as AI models become better.
-Good news is that humans seem to be consistent in why they fail at detecting AI generated.
-So there may be cues that we can implement in AI models, so called AI accents.
+Humans struggle to identify AI-generated content, performing marginally better than chance. This will worsen as AI models improve. However, humans consistently fail for similar reasons, suggesting potential cues, or "AI accents," for implementation in AI models as a solution.
