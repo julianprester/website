@@ -3,6 +3,7 @@ title: Can I remove my personal data from GenAI training datasets?
 url: >-
   https://knowingmachines.org/knowing-legal-machines/legal-explainer/questions/can-i-remove-my-personal-data-from-genai-training-datasets
 date: 2023-12-01T00:00:00.000Z
+syndicated: true
 tags:
   - links
 scheduled: 2024-10-09T03:00:00.000Z

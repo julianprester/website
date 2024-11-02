@@ -3,6 +3,7 @@ title: "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Trai
 url: https://arxiv.org/abs/2401.05566
 date: 2024-01-13
 scheduled: 2024-01-14
+syndicated: true
 tags:
   - links
 ---

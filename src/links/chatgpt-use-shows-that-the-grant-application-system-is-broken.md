@@ -3,6 +3,7 @@ title: ChatGPT use shows that the grant-application system is broken
 url: >-
   https://www.nature.com/articles/d41586-023-03238-5?error=cookies_not_supported&code=50e580be-58a8-462e-a55d-cacca4fc2169
 date: 2023-10-17T00:00:00.000Z
+syndicated: true
 tags:
   - links
 scheduled: 2024-10-11T03:00:00.000Z

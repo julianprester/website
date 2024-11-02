@@ -5,6 +5,7 @@ url: >-
 date: 2024-09-26T00:00:00.000Z
 thumbnail: >-
   https://media.nature.com/lw1200/magazine-assets/d41586-024-02998-y/d41586-024-02998-y_27684494.jpg
+syndicated: false
 tags:
   - links
 scheduled: 2024-11-19T03:00:00.000Z

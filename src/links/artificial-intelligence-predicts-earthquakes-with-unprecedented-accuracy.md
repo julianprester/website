@@ -4,6 +4,7 @@ url: >-
   https://scitechdaily.com/artificial-intelligence-predicts-earthquakes-with-unprecedented-accuracy/
 date: 2024-09-19T00:00:00.000Z
 thumbnail: 'https://scitechdaily.com/images/Earthquake-Geometry-Physics-Simulation-Art.jpg'
+syndicated: true
 tags:
   - links
 scheduled: 2024-10-05T03:00:00.000Z

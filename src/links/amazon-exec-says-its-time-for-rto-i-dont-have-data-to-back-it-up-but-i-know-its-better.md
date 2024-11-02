@@ -4,6 +4,7 @@ title: >-
   know it’s better’
 url: 'https://fortune.com/2023/08/03/amazon-svp-mike-hopkins-office-return/'
 date: 2023-12-01T00:00:00.000Z
+syndicated: true
 tags:
   - links
 scheduled: 2024-10-03T03:00:00.000Z

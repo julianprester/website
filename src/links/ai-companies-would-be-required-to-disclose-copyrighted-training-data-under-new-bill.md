@@ -4,6 +4,7 @@ title: AI companies would be required to disclose copyrighted training data
 url: https://www.theverge.com/2023/12/22/24012757/ai-foundation-model-transparency-act-bill-copyright-regulation
 date: 2023-12-26
 scheduled: 2023-12-27
+syndicated: true
 tags:
   - links
 ---

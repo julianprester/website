@@ -3,6 +3,7 @@ title: Scammy AI-Generated Book Rewrites Are Flooding Amazon
 url: https://www.wired.com/story/scammy-ai-generated-books-flooding-amazon/
 date: 2024-01-13
 scheduled: 2024-01-13
+syndicated: true
 tags:
   - links
 ---

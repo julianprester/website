@@ -2,6 +2,7 @@
 title: 'Reshaping the tree: rebuilding organizations for AI'
 url: 'https://www.oneusefulthing.org/p/reshaping-the-tree-rebuilding-organizations'
 date: 2023-11-28T00:00:00.000Z
+syndicated: true
 tags:
   - links
 scheduled: 2024-10-21T03:00:00.000Z

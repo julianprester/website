@@ -3,6 +3,7 @@ title: 'Two kinds of LLM responses: Informational vs Instructional'
 url: 'https://shabie.github.io/2024/09/23/two-kinds-llm-responses.html'
 date: 2024-09-28T00:00:00.000Z
 thumbnail: None
+syndicated: false
 tags:
   - links
 scheduled: 2024-11-11T03:00:00.000Z

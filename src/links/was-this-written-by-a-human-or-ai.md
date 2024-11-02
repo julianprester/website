@@ -2,6 +2,7 @@
 title: Was this written by a human or AI?
 date: 2023-03-16T00:00:00.000Z
 url: 'https://hai.stanford.edu/news/was-written-human-or-ai-tsu'
+syndicated: false
 tags:
   - links
 scheduled: 2024-11-12T03:00:00.000Z

@@ -3,6 +3,7 @@ title: "AI Leapfrogging: How AI Will Transform “Lagging” Industries"
 url: https://www.nfx.com/post/ai-leapfrogging
 date: 2024-05-02
 scheduled: 2024-05-04
+syndicated: true
 tags:
   - links
 ---

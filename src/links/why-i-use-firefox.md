@@ -3,6 +3,7 @@ title: Why I use Firefox
 url: https://xn--ime-zza.eu/3/
 date: 2024-03-02
 scheduled: 2024-03-03
+syndicated: true
 tags:
   - links
 ---

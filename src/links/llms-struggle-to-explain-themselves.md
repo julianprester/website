@@ -3,6 +3,7 @@ title: LLMs struggle to explain themselves
 url: 'https://www.jonathanychan.com/blog/llms-struggle-to-explain-themselves/'
 date: 2024-09-27T00:00:00.000Z
 thumbnail: None
+syndicated: false
 tags:
   - links
 scheduled: 2024-11-05T03:00:00.000Z

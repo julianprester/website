@@ -5,6 +5,7 @@ title: >-
 date: 2023-08-25T00:00:00.000Z
 url: >-
   https://www.businessinsider.com/return-to-office-mandates-restore-ceo-power-2023-8
+syndicated: true
 tags:
   - links
 scheduled: 2024-10-22T03:00:00.000Z

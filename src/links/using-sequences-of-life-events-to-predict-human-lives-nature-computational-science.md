@@ -4,6 +4,7 @@ title: Using sequences of life-events to predict human lives - Nature
 url: https://www.nature.com/articles/s43588-023-00573-5?error=cookies_not_supported&code=4d810ce8-a9a0-47fc-8728-ac17739f7413
 date: 2023-12-23
 scheduled: 2023-12-24
+syndicated: true
 tags:
   - links
 ---

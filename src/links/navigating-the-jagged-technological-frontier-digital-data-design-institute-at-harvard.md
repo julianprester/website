@@ -4,6 +4,7 @@ title: >-
   at Harvard
 url: 'https://d3.harvard.edu/navigating-the-jagged-technological-frontier/'
 date: 2023-10-03T00:00:00.000Z
+syndicated: true
 tags:
   - links
 scheduled: 2024-10-16T03:00:00.000Z

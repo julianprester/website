@@ -3,6 +3,7 @@ title: The “it” in AI models is the dataset. – Non_Interactive – Softwar
 url: https://nonint.com/2023/06/10/the-it-in-ai-models-is-the-dataset/
 date: 2024-05-02
 scheduled: 2024-05-02
+syndicated: true
 tags:
   - links
 ---

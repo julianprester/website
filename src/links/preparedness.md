@@ -3,6 +3,7 @@ title: Preparedness
 url: https://openai.com/safety/preparedness
 date: 2023-12-28
 scheduled: 2023-12-28
+syndicated: true
 tags:
   - links
 ---

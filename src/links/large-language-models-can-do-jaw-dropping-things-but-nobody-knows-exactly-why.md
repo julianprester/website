@@ -3,6 +3,7 @@ title: Large language models can do jaw-dropping things. But nobody knows exactl
 url: https://www.technologyreview.com/2024/03/04/1089403/large-language-models-amazing-but-nobody-knows-why/
 date: 2024-03-28
 scheduled: 2024-03-30
+syndicated: true
 tags:
   - links
 ---

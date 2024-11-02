@@ -3,6 +3,7 @@ title: Big Post About Big Context
 url: https://gonzoml.substack.com/p/big-post-about-big-context
 date: 2024-03-01
 scheduled: 2024-03-01
+syndicated: true
 tags:
   - links
 ---

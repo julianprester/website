@@ -5,6 +5,7 @@ url: >-
 date: 2024-09-19T00:00:00.000Z
 thumbnail: >-
   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/SoWperLCkunB9ijGq/e3oghpji5qrrmobnfv0w
+syndicated: true
 tags:
   - links
 scheduled: 2024-10-08T03:00:00.000Z

@@ -4,6 +4,7 @@ url: 'https://blog.api-fiddle.com/posts/coolify-revolution'
 date: 2024-09-28T00:00:00.000Z
 thumbnail: >-
   https://blog.api-fiddle.com/posts/coolify-revolution/opengraph-image?02e1a319160ff3ba
+syndicated: false
 tags:
   - links
 scheduled: 2024-11-09T03:00:00.000Z

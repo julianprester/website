@@ -3,6 +3,7 @@ title: 100M Token Context Windows
 url: 'https://magic.dev/blog/100m-token-context-windows'
 date: 2024-09-28T00:00:00.000Z
 thumbnail: 'https://magic.dev/blog/100m-token-context-windows/hero.png'
+syndicated: false
 tags:
   - links
 scheduled: 2024-11-07T03:00:00.000Z

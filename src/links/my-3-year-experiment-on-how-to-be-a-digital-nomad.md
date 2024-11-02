@@ -3,6 +3,7 @@ title: My 3-Year Experiment on How to Be a Digital Nomad
 url: https://www.kapwing.com/blog/digital-nomad/
 date: 2024-01-09
 scheduled: 2024-01-11
+syndicated: true
 tags:
   - links
 ---

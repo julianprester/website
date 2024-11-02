@@ -3,6 +3,7 @@ title: NIST Identifies Types of Cyberattacks That Manipulate Behavior of AI Syst
 url: https://www.nist.gov/news-events/news/2024/01/nist-identifies-types-cyberattacks-manipulate-behavior-ai-systems
 date: 2024-01-08
 scheduled: 2024-01-09
+syndicated: true
 tags:
   - links
 ---

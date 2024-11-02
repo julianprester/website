@@ -5,6 +5,7 @@ title: >-
 url: 'https://arxiv.org/abs/2406.10279'
 date: 2024-10-01T12:03:36.000Z
 thumbnail: 'https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png'
+syndicated: false
 tags:
   - links
 scheduled: 2024-11-13T03:00:00.000Z

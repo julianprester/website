@@ -4,6 +4,7 @@ title: "On the Conversational Persuasiveness of Large Language Models: A
 url: https://arxiv.org/abs/2403.14380
 date: 2024-04-10
 scheduled: 2024-04-14
+syndicated: true
 tags:
   - links
 ---

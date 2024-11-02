@@ -7,6 +7,7 @@ url: >-
 date: 2024-09-26T00:00:00.000Z
 thumbnail: >-
   https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1qU17u.img?w=2048&h=1365&m=4&q=88
+syndicated: true
 tags:
   - links
 scheduled: 2024-11-02T03:00:00.000Z
