@@ -114,7 +114,7 @@ const simplifyContent = (article) => {
 
 const getTweet = async (record) => {
     const response = await openai.chat.completions.create({
-        model: "gemini-1.5-pro-exp",
+        model: "gemini-1.5-pro",
         messages: [
             { role: "system", content: PROMPT },
             { role: "user", content: `<article_content>${record.content}</article_content>` },
