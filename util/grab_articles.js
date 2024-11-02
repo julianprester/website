@@ -176,18 +176,25 @@ const createPullRequest = async (repo, record, tweet) => {
 
 const pushRecord = async (record) => {
     const tweet = await getTweet(record);
+    if (tweet.length > 280) {
+        console.error("Tweet too long, skipping article");
+        return null;
+    }
     const repo = { owner: "julianprester", name: "website", default_branch: "main" };
     await createBranch(repo, record);
     await createFile(repo, record, tweet);
     await createPullRequest(repo, record, tweet);
+    return tweet;
 };
 
 const publish = async () => {
     const articles = await fetchNewArticles();
     for (const article of articles) {
         const simplifiedArticle = simplifyContent(article);
-        await pushRecord(simplifiedArticle);
-        await tagArticle(article.id);
+        const tweet = await pushRecord(simplifiedArticle);
+        if (tweet) {
+            await tagArticle(article.id);
+        }
     }
 };
 
