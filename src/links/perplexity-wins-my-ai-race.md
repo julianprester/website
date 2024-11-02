@@ -6,7 +6,7 @@ thumbnail: >-
   https://res.cloudinary.com/lesswrong-2-0/image/upload/v1654295382/new_mississippi_river_fjdmww.jpg
 tags:
   - links
-scheduled: 2024-10-18T03:00:00.000Z
+scheduled: 2025-01-03T03:00:00.000Z
 ---
 
 Perplexity is the first AI chatbot I've found genuinely useful. Citations make a huge difference in trust and workflow, unlike other chatbots with their endless disclaimers.

@@ -1,8 +1,8 @@
 ---
 title: AI Regulation is Unsafe
-url: https://www.maximum-progress.com/p/ai-regulation-is-unsafe
-date: 2024-04-23
-scheduled: 2024-04-23
+url: 'https://www.maximum-progress.com/p/ai-regulation-is-unsafe'
+date: 2024-04-23T00:00:00.000Z
+scheduled: 2024-11-25T03:00:00.000Z
 tags:
   - links
 ---

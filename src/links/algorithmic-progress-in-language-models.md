@@ -1,8 +1,8 @@
 ---
 title: Algorithmic progress in language models
-url: https://arxiv.org/abs/2403.05812
-date: 2024-03-23
-scheduled: 2024-03-25
+url: 'https://arxiv.org/abs/2403.05812'
+date: 2024-03-23T00:00:00.000Z
+scheduled: 2024-11-26T03:00:00.000Z
 tags:
   - links
 ---

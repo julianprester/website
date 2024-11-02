@@ -7,7 +7,7 @@ url: >-
   https://www.businessinsider.com/return-to-office-mandates-restore-ceo-power-2023-8
 tags:
   - links
-scheduled: 2024-10-22T03:00:00.000Z
+scheduled: 2025-01-11T03:00:00.000Z
 ---
 
 CEOs are trying to get control back. Return to the office mandates will affect workers unequally.

@@ -1,8 +1,8 @@
 ---
-title: "Survey of 2,778 AI authors: six parts in pictures"
-url: https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things
-date: 2024-01-08
-scheduled: 2024-01-10
+title: 'Survey of 2,778 AI authors: six parts in pictures'
+url: 'https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things'
+date: 2024-01-08T00:00:00.000Z
+scheduled: 2025-01-15T03:00:00.000Z
 tags:
   - links
 ---

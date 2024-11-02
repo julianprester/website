@@ -1,8 +1,8 @@
 ---
 title: Stealing Part of a Production Language Model
-url: https://arxiv.org/abs/2403.06634
-date: 2024-03-15
-scheduled: 2024-03-15
+url: 'https://arxiv.org/abs/2403.06634'
+date: 2024-03-15T00:00:00.000Z
+scheduled: 2025-01-14T03:00:00.000Z
 tags:
   - links
 ---
