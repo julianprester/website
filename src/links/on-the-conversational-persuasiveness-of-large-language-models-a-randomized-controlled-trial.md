@@ -3,7 +3,7 @@ title: "On the Conversational Persuasiveness of Large Language Models: A
   Randomized Controlled Trial"
 url: https://arxiv.org/abs/2403.14380
 date: 2024-04-10
-syndicated: 2024-04-14
+scheduled: 2024-04-14
 tags:
   - links
 ---

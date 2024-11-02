@@ -2,7 +2,7 @@
 title: OpenAI's chatbot store is filling up with spam | TechCrunch
 url: https://techcrunch.com/2024/03/20/openais-chatbot-store-is-filling-up-with-spam/
 date: 2024-03-23
-syndicated: 2024-03-24
+scheduled: 2024-03-24
 tags:
   - links
 ---

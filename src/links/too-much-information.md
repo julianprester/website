@@ -2,7 +2,7 @@
 title: Too Much Information
 url: https://www.argmin.net/p/too-much-information
 date: 2023-12-28
-syndicated: 2024-01-01
+scheduled: 2024-01-01
 tags:
   - links
 ---

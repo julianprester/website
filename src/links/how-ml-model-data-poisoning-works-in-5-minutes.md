@@ -2,7 +2,7 @@
 title: How ML Model Data Poisoning Works in 5 Minutes
 url: https://journal.hexmos.com/training-data-poisoning/?src=hn
 date: 2024-03-28
-syndicated: 2024-03-29
+scheduled: 2024-03-29
 tags:
   - links
 ---

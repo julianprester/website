@@ -2,7 +2,7 @@
 title: These companies tried a 4-day workweek. More than a year in, they still love it
 url: https://www.npr.org/2024/02/27/1234271434/4-day-workweek-successful-a-year-later-in-uk
 date: 2024-03-02
-syndicated: 2024-03-05
+scheduled: 2024-03-05
 tags:
   - links
 ---

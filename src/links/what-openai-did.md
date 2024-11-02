@@ -2,7 +2,7 @@
 title: What OpenAI did
 url: https://www.oneusefulthing.org/p/what-openai-did
 date: 2024-05-15
-syndicated: 2024-05-15
+scheduled: 2024-05-15
 tags:
   - links
 ---

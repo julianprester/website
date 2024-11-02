@@ -2,7 +2,7 @@
 title: Things are about to get a lot worse for Generative AI
 url: https://garymarcus.substack.com/p/things-are-about-to-get-a-lot-worse
 date: 2024-01-03
-syndicated: 2024-01-03
+scheduled: 2024-01-03
 tags:
   - links
 ---

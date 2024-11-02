@@ -7,7 +7,7 @@ thumbnail: >-
   https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/SoWperLCkunB9ijGq/e3oghpji5qrrmobnfv0w
 tags:
   - links
-syndicated: 2024-10-08T03:00:00.000Z
+scheduled: 2024-10-08T03:00:00.000Z
 ---
 
 Epoch estimates that AI training runs could reach GPT-4-like scale increases by 2030, primarily constrained by power and chip production. This requires massive investments and infrastructure expansion.

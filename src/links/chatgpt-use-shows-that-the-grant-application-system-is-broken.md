@@ -5,7 +5,7 @@ url: >-
 date: 2023-10-17T00:00:00.000Z
 tags:
   - links
-syndicated: 2024-10-11T03:00:00.000Z
+scheduled: 2024-10-11T03:00:00.000Z
 ---
 
 A Nature survey of 1,600 researchers found that more than 25% use AI to help them write manuscripts. If AI use among academics is as widespread as the Nature survey suggests, shouldn't journal submissions have dropped significantly, given publishers' AI bans?

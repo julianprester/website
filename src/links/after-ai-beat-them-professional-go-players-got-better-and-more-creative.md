@@ -2,7 +2,7 @@
 title: After AI beat them, professional go players got better and more creative
 url: https://www.henrikkarlsson.xyz/p/go
 date: 2024-04-09
-syndicated: 2024-04-13
+scheduled: 2024-04-13
 tags:
   - links
 ---

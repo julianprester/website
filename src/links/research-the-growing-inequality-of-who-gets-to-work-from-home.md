@@ -2,7 +2,7 @@
 title: "Research: The Growing Inequality of Who Gets to Work from Home"
 url: https://hbr.org/2023/12/research-the-growing-inequality-of-who-gets-to-work-from-home
 date: 2024-03-04
-syndicated: 2024-03-07
+scheduled: 2024-03-07
 tags:
   - links
 ---
