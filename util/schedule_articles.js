@@ -31,7 +31,7 @@ async function schedule() {
     nextDate.setDate(nextDate.getDate() + 1);
 
     for (const post of posts) {
-        if (!post.data.scheduled) {
+        if (!post.data.scheduled || (new Date(post.data.scheduled) < new Date() && !post.data.syndicated)) {
             post.data.scheduled = nextDate;
             await fs.writeFile(
                 path.join(LINKS_DIR, post.file),
