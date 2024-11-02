@@ -8,7 +8,7 @@ thumbnail: >-
   https://cdn.vox-cdn.com/thumbor/3Cad8eKxPpG6teMc0RvLIhoedfk=/0x0:2250x1500/1200x628/filters:focal(503x745:504x746)/cdn.vox-cdn.com/uploads/chorus_asset/file/25582867/ai_label__2_.png
 tags:
   - links
-syndicated: 2024-10-30T03:00:00.000Z
+syndicated: 2024-11-17T03:00:00.000Z
 ---
 
 Google's new Pixel AI, Reimagine, can create disturbingly realistic photo alterations, including fake crime scenes. Distinguishing reality from AI fakes becomes increasingly difficult.
