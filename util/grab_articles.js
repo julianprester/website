@@ -147,7 +147,7 @@ const createBranch = async (repo, record) => {
 
 const createFile = async (repo, record, tweet) => {
     const content = matter.stringify(tweet, {
-        title: record.title,
+        title: record.title.replace("'", "’"),
         url: record.url,
         date: new Date().toISOString(),
         thumbnail: record.preview_picture,
