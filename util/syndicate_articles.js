@@ -74,11 +74,20 @@ async function publishToTwitter(post) {
     console.log('Tweet published successfully');
 }
 
+async function setSyndicated(post) {
+    post.data.syndicated = true;
+    await fs.writeFile(
+        path.join(LINKS_DIR, post.file),
+        matter.stringify(post.content, post.data)
+    );
+}
+
 (async () => {
     try {
         const post = await getTodayPost();
         if (post) {
             await publishToTwitter(post);
+            await setSyndicated(post);
         } else {
             console.log('No posts to publish today');
         }
