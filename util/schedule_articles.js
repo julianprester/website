@@ -20,7 +20,7 @@ async function getPostsData(dir) {
 function getLastScheduledDate(posts) {
     const today = new Date(new Date().setUTCHours(3, 0, 0, 0));
     return posts.reduce((latestDate, post) => {
-        const scheduledDate = post.data.syndicated ? new Date(post.data.syndicated) : today;
+        const scheduledDate = post.data.scheduled ? new Date(post.data.scheduled) : today;
         return scheduledDate > latestDate ? scheduledDate : latestDate;
     }, today);
 }
@@ -31,8 +31,8 @@ async function schedule() {
     nextDate.setDate(nextDate.getDate() + 1);
 
     for (const post of posts) {
-        if (!post.data.syndicated) {
-            post.data.syndicated = nextDate;
+        if (!post.data.scheduled) {
+            post.data.scheduled = nextDate;
             await fs.writeFile(
                 path.join(LINKS_DIR, post.file),
                 matter.stringify(post.content, post.data)

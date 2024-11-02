@@ -24,7 +24,7 @@ async function getTodayPost() {
         const content = await fs.readFile(filePath, 'utf8');
         const post = matter(content);
 
-        if (post.data.syndicated?.toISOString().slice(0, 10) === today) {
+        if (post.data.scheduled?.toISOString().slice(0, 10) === today) {
             return post;
         }
     }

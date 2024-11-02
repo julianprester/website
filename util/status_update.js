@@ -53,10 +53,10 @@ async function getLastScheduledDate() {
                 const content = await fs.readFile(path.join(LINKS_DIR, file), 'utf8');
                 const { data } = matter(content);
 
-                if (data.syndicated && !isNaN(new Date(data.syndicated))) {
-                    const syndicatedDate = new Date(data.syndicated);
-                    if (!newestDate || syndicatedDate > newestDate) {
-                        newestDate = syndicatedDate;
+                if (data.scheduled && !isNaN(new Date(data.scheduled))) {
+                    const scheduledDate = new Date(data.scheduled);
+                    if (!newestDate || scheduledDate > newestDate) {
+                        newestDate = scheduledDate;
                     }
                 }
             }
