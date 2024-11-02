@@ -1,8 +1,8 @@
 ---
 title: How is AI impacting science?
-url: 'https://michaelnotebook.com/mc2023/index.html'
-date: 2024-01-04T00:00:00.000Z
-scheduled: 2024-12-15T03:00:00.000Z
+url: https://michaelnotebook.com/mc2023/index.html
+date: 2024-01-04
+scheduled: 2024-01-05
 tags:
   - links
 ---

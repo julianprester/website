@@ -1,8 +1,8 @@
 ---
 title: The Great AI Weirding
-url: 'https://deliprao.substack.com/p/the-great-ai-weirding'
-date: 2023-12-28T00:00:00.000Z
-scheduled: 2025-01-21T03:00:00.000Z
+url: https://deliprao.substack.com/p/the-great-ai-weirding
+date: 2023-12-28
+scheduled: 2023-12-31
 tags:
   - links
 ---

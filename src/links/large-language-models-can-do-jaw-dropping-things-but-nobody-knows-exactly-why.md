@@ -1,11 +1,8 @@
 ---
-title: >-
-  Large language models can do jaw-dropping things. But nobody knows exactly
-  why.
-url: >-
-  https://www.technologyreview.com/2024/03/04/1089403/large-language-models-amazing-but-nobody-knows-why/
-date: 2024-03-28T00:00:00.000Z
-scheduled: 2024-12-20T03:00:00.000Z
+title: Large language models can do jaw-dropping things. But nobody knows exactly why.
+url: https://www.technologyreview.com/2024/03/04/1089403/large-language-models-amazing-but-nobody-knows-why/
+date: 2024-03-28
+scheduled: 2024-03-30
 tags:
   - links
 ---

@@ -1,8 +1,8 @@
 ---
-title: 'Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training'
-url: 'https://arxiv.org/abs/2401.05566'
-date: 2024-01-13T00:00:00.000Z
-scheduled: 2025-01-13T03:00:00.000Z
+title: "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training"
+url: https://arxiv.org/abs/2401.05566
+date: 2024-01-13
+scheduled: 2024-01-14
 tags:
   - links
 ---

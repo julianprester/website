@@ -1,8 +1,8 @@
 ---
 title: Humans as Cyborgs
-url: 'https://anima.nz/cyborg/'
-date: 2023-12-28T00:00:00.000Z
-scheduled: 2024-12-18T03:00:00.000Z
+url: https://anima.nz/cyborg/
+date: 2023-12-28
+scheduled: 2023-12-29
 tags:
   - links
 ---

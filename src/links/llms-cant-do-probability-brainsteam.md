@@ -1,8 +1,8 @@
 ---
 title: LLMs Can't Do Probability - Brainsteam
-url: 'https://brainsteam.co.uk/2024/05/01/llms-cant-do-probability/'
-date: 2024-05-08T00:00:00.000Z
-scheduled: 2024-12-21T03:00:00.000Z
+url: https://brainsteam.co.uk/2024/05/01/llms-cant-do-probability/
+date: 2024-05-08
+scheduled: 2024-05-09
 tags:
   - links
 ---

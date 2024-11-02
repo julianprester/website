@@ -1,9 +1,8 @@
 ---
 title: AI and Mass Spying - Schneier on Security
-url: >-
-  https://www.schneier.com/blog/archives/2023/12/the-internet-enabled-mass-surveillance-ai-will-enable-mass-spying.html
-date: 2023-12-21T00:00:00.000Z
-scheduled: 2024-11-21T03:00:00.000Z
+url: https://www.schneier.com/blog/archives/2023/12/the-internet-enabled-mass-surveillance-ai-will-enable-mass-spying.html
+date: 2023-12-21
+scheduled: 2023-12-21
 tags:
   - links
 ---

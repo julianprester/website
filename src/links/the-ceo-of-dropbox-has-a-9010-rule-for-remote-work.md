@@ -5,7 +5,7 @@ url: >-
 date: 2023-10-17T00:00:00.000Z
 tags:
   - links
-scheduled: 2025-01-18T03:00:00.000Z
+scheduled: 2024-10-23T03:00:00.000Z
 ---
 
 All-remote mixed with high intensity in-person events or workations seems to be a good recipe for remote organisations.

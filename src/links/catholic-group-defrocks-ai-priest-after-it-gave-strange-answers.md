@@ -1,8 +1,8 @@
 ---
 title: Catholic Group Defrocks AI Priest After It Gave Strange Answers
-url: 'https://futurism.com/catholics-defrock-ai-priest-hallucinations'
-date: 2024-05-02T00:00:00.000Z
-scheduled: 2024-12-07T03:00:00.000Z
+url: https://futurism.com/catholics-defrock-ai-priest-hallucinations
+date: 2024-05-02
+scheduled: 2024-05-03
 tags:
   - links
 ---

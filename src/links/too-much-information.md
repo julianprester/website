@@ -1,8 +1,8 @@
 ---
 title: Too Much Information
-url: 'https://www.argmin.net/p/too-much-information'
-date: 2023-12-28T00:00:00.000Z
-scheduled: 2025-01-27T03:00:00.000Z
+url: https://www.argmin.net/p/too-much-information
+date: 2023-12-28
+scheduled: 2024-01-01
 tags:
   - links
 ---

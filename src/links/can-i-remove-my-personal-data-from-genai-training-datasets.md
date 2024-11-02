@@ -5,7 +5,7 @@ url: >-
 date: 2023-12-01T00:00:00.000Z
 tags:
   - links
-scheduled: 2024-12-06T03:00:00.000Z
+scheduled: 2024-10-09T03:00:00.000Z
 ---
 
 It's hard enough to find out whether my data has been used to train an AI model. It seems impossible to remove data from already trained models. May 'machine unlearning' offer a solution?
