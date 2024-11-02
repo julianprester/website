@@ -150,6 +150,7 @@ const createFile = async (repo, record, tweet) => {
         title: record.title.replace("'", "’"),
         url: record.url,
         date: new Date().toISOString(),
+        syndicated: false,
         thumbnail: record.preview_picture,
     });
 
