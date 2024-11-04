@@ -7,4 +7,4 @@ tags:
   - links
 ---
 
-New study shows a 26% productivity boost for software developers using GitHub Copilot. While promising, I'm skeptical about extrapolating these findings to other domains. Software development might be a unique case for AI assistance.
+New study shows a 26% productivity boost for software developers using GitHub Copilot. Software development clearly is the main profession so far to benefit from AI assistance. What developments are required for the next field?
