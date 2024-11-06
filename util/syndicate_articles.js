@@ -25,6 +25,7 @@ async function getTodayPost() {
         const post = matter(content);
 
         if (post.data.scheduled?.toISOString().slice(0, 10) === today) {
+            post.file = file;
             return post;
         }
     }
