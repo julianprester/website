@@ -7,7 +7,7 @@ thumbnail: >-
 syndicated: false
 tags:
   - links
-scheduled: 2024-11-04T03:00:00.000Z
+scheduled: 2024-11-22T03:00:00.000Z
 ---
 
 New research suggests life, as self-replicating code, arises spontaneously given computation, noise, and time. Fascinating, but also a chilling reminder of how little we truly understand the origins and nature of life, biological or otherwise.

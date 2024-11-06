@@ -6,7 +6,7 @@ thumbnail: None
 syndicated: false
 tags:
   - links
-scheduled: 2024-11-05T03:00:00.000Z
+scheduled: 2024-11-23T03:00:00.000Z
 ---
 
 LLMs struggle to explain even simple number patterns they can sometimes recognize. A new interactive demo shows how LLMs fail to provide coherent reasoning despite access to tools and multiple attempts. Are impressive benchmarks masking fundamental reasoning limitations?
