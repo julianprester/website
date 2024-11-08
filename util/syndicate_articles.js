@@ -59,13 +59,19 @@ async function publishToTwitter(post) {
     if (post.data.thumbnail && post.data.thumbnail !== 'None') {
         let imageBuffer = await downloadImage(post.data.thumbnail);
 
-        const fileType = await sharp(imageBuffer).metadata();
-        if (fileType.format === 'gif') {
-            imageBuffer = await convertGifToJpg(imageBuffer);
+        try {
+            const fileType = await sharp(imageBuffer).metadata();
+            if (fileType.format === 'gif') {
+                imageBuffer = await convertGifToJpg(imageBuffer);
+            }
+    
+            const mediaId = await client.v1.uploadMedia(imageBuffer, { mimeType: 'image/jpeg' });
+            tweet.media = { media_ids: [mediaId] };
+        } catch (error) {
+            if (error.message.includes('unsupported image format')) {
+                console.log('Unsupported image format, skipping thumbnail');
+            }
         }
-
-        const mediaId = await client.v1.uploadMedia(imageBuffer, { mimeType: 'image/jpeg' });
-        tweet.media = { media_ids: [mediaId] };
     }
     const decardedLink = await decardLink(post.data.url);
     await client.v2.tweetThread([
