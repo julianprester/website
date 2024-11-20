@@ -3,7 +3,7 @@ title: GPTs and Hallucination
 url: 'https://queue.acm.org/detail.cfm?id=3688007'
 date: 2024-09-26T00:00:00.000Z
 thumbnail: 'https://queue.acm.org/img/icon_pdf.png'
-syndicated: false
+syndicated: true
 tags:
   - links
 scheduled: 2024-11-20T03:00:00.000Z
