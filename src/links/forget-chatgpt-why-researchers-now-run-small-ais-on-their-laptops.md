@@ -8,7 +8,7 @@ thumbnail: >-
 syndicated: false
 tags:
   - links
-scheduled: 2024-11-19T03:00:00.000Z
+scheduled: 2024-11-26T03:00:00.000Z
 ---
 
 Open-weight LLMs running locally are gaining traction! Researchers are using them to bypass costs, protect privacy & ensure reproducibility.  While cloud-based models still have advantages, the rapid progress of local LLMs suggests they might become sufficient for most use cases soon.
