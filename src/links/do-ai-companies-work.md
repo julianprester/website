@@ -7,4 +7,4 @@ tags:
   - links
 ---
 
-The unsustainable economics of LLM companies: constant, exorbitant reinvestment just to stay afloat. Open-source is catching up & the hype may soon fade, leaving many well-funded ventures stranded. Is this another bubble waiting to burst?
+It looks like we're slowly past the peak of inflated expectations in the AI hype cycle. Open-source is catching up to the many well-funded ventures.
