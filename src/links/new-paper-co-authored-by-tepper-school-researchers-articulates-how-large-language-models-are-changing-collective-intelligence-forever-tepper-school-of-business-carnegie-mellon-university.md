@@ -10,4 +10,4 @@ thumbnail: >-
   https://www.cmu.edu/tepper/news/assets/images/llms-collective-intelligence.webp
 syndicated: false
 ---
-LLMs are touted as boosting collective intelligence, but are they just creating an illusion of consensus by amplifying majority opinions and potentially spreading misinformation?  We need critical guidelines, not hype, to navigate this double-edged sword.
+LLMs are touted as boosting collective intelligence, but are they just creating an illusion of consensus by amplifying majority opinions and potentially spreading misinformation?
