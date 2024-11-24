@@ -8,7 +8,7 @@ thumbnail: >-
 syndicated: false
 tags:
   - links
-scheduled: 2024-11-24T03:00:00.000Z
+scheduled: 2024-12-09T03:00:00.000Z
 ---
 
 Meta boasts of 350M Llama downloads & widespread enterprise adoption. While impressive, this open-source push feels like a strategic play for data dominance rather than pure altruism. What's the real cost of "free" AI?
