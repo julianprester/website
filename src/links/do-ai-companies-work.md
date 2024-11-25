@@ -7,6 +7,7 @@ thumbnail: >-
 tags:
   - links
 scheduled: 2024-11-25T03:00:00.000Z
+syndicated: true
 ---
 
 It looks like we're slowly past the peak of inflated expectations in the AI hype cycle. Open-source is catching up to the many well-funded ventures.
