@@ -7,6 +7,7 @@ thumbnail: >-
 tags:
   - links
 scheduled: 2024-11-29T03:00:00.000Z
+syndicated: true
 ---
 
 The delusion of opting out of AI: No magic words can stop your data from being used, and even if you could, the flood of AI-generated 'slop' content is unavoidable. Tech giants are prioritizing engagement over user experience, pushing AI whether we want it or not.
