@@ -69,44 +69,29 @@ async function getLastScheduledDate() {
     }
 }
 
-async function sendGotifyMessage(title, message, priority = 5) {
-    const url = `${GOTIFY_URL}/message?token=${GOTIFY_TOKEN}`;
-
-    const payload = {
-        title: title,
-        message: message,
-        priority: priority
-    };
-
-    try {
-        const response = await fetch(url, {
-            method: 'POST',
-            body: JSON.stringify(payload),
-            headers: { 'Content-Type': 'application/json' }
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+async function sendNtfyMessage(title, message, priority = 5) {
+    fetch(process.env.NTFY_URL, {
+        method: 'POST',
+        body: message,
+        headers: {
+            'Title': title,
+            'Priority': priority,
+            'Authorization': `Bearer ${process.env.NTFY_TOKEN}`
         }
-
-        const data = await response.json();
-        console.log('Message sent successfully:', data);
-        return data;
-    } catch (error) {
-        console.error('Error sending Gotify message:', error);
-        throw error;
-    }
+    })
+        .then(data => console.log('Message sent successfully:', data))
+        .catch(error => console.error('Error sending Ntfy message:', error));
 }
 
 async function getStatusUpdate() {
     const prCount = await getPullRequest();
     if (prCount > 10) {
-        sendGotifyMessage('julianprester.com [PR]', `There are ${prCount} open PRs. Write some tweets!`);
+        sendNtfyMessage('julianprester.com [PR]', `There are ${prCount} open PRs. Write some tweets!`);
     }
     const lastScheduledDate = await getLastScheduledDate();
     const daysUntil = Math.floor((lastScheduledDate - new Date()) / (1000 * 60 * 60 * 24));
     if (daysUntil <= 5) {
-        sendGotifyMessage('julianprester.com [POSTS]', `There are only ${daysUntil} more posts scheduled. Refill the pipeline!`);
+        sendNtfyMessage('julianprester.com [POSTS]', `There are only ${daysUntil} more posts scheduled. Refill the pipeline!`);
     }
 }
 

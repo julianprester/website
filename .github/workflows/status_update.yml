@@ -18,5 +18,5 @@ jobs:
       - run: npm run status --if-present
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GOTIFY_URL: ${{ secrets.GOTIFY_URL }}
-          GOTIFY_TOKEN: ${{ secrets.GOTIFY_TOKEN }}
+          NTFY_URL: ${{ secrets.NTFY_URL }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
