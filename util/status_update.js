@@ -5,9 +5,6 @@ import matter from 'gray-matter';
 
 const GITHUB_TOKEN = process.env.GH_TOKEN;
 
-const GOTIFY_URL = process.env.GOTIFY_URL;
-const GOTIFY_TOKEN = process.env.GOTIFY_TOKEN;
-
 const LINKS_DIR = 'src/links';
 
 const octokit = new Octokit({ auth: GITHUB_TOKEN });
@@ -89,7 +86,7 @@ async function getStatusUpdate() {
         sendNtfyMessage('julianprester.com [PR]', `There are ${prCount} open PRs. Write some tweets!`);
     }
     const lastScheduledDate = await getLastScheduledDate();
-    const daysUntil = Math.floor((lastScheduledDate - new Date()) / (1000 * 60 * 60 * 24));
+    const daysUntil = Math.max(0, Math.floor((lastScheduledDate - new Date()) / (1000 * 60 * 60 * 24)));
     if (daysUntil <= 5) {
         sendNtfyMessage('julianprester.com [POSTS]', `There are only ${daysUntil} more posts scheduled. Refill the pipeline!`);
     }
