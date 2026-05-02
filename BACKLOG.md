@@ -1,15 +1,13 @@
 # Website Backlog
 
-Items discovered during the site audit. Ordered roughly by impact within each
-category.
+Items discovered during the site audit. Checked items are implemented.
 
 ## Architecture & Build
 
 - [ ] **Tailwind CSS v4 migration** — full config format rewrite
   (`tailwind.config.js` → CSS-based config). Will also unlock v4 performance
   improvements and smaller CSS output.
-- [~] **CSS minification** — declined
-- [~] **HTML minification** — declined
+- [~] **CSS / HTML minification** — declined
 - [ ] **Cache busting** — hash-based filenames or query strings for
   `/css/tailwind.css` and `/js/alpine.js` so CDN caches don't serve stale
   assets
@@ -25,30 +23,25 @@ category.
   are read blindly. A shared `util/config.js` would reduce duplication and
   add startup validation.
 - [ ] **GitHub Actions: cache `node_modules`** — add `cache: 'npm'` to all
-  `actions/setup-node` steps
+  `actions/setup-node` steps (moot if workflows are being removed)
 - [ ] **Add linting / formatting** — ESLint, Prettier, `.editorconfig`.
   Templates have inconsistent indentation (mix of 2-space and 4-space).
 - [ ] **Missing `tags` in generated link posts** — `grab_articles.js` does
   not write a `tags: links` field in frontmatter, so newer links may not
-  appear in `collections.links` (which  `links.xml.njk` depends on).
+  appear in `collections.links` (which `links.xml.njk` depends on).
 - [ ] **Auto-merge socialbot PRs** — if LLM-generated tweets are considered
   pre-approved, add GitHub Actions auto-merge to avoid accumulating open PRs.
 
 ## SEO
 
-- [ ] **JSON-LD structured data** — add Schema.org markup:
-  - Homepage: `Person` (affiliation, alumniOf, sameAs links)
-  - `/research/`: `ScholarlyArticle` for each publication
-  - `/bookshelf/<slug>/`: `Book` (author, dateRead, review body)
-  - `/writing/<slug>/`: `Article` / `BlogPosting`
-- [ ] **RSS auto-discovery `<link>` tags** — add to `<head>` so browsers and
-  feed readers can discover the feeds automatically
-- [ ] **Unique meta descriptions** — pages without explicit `description`
-  frontmatter (books, news items) inherit the same generic description from
-  `base.html`. Use `eleventyComputed` to auto-derive descriptions from
-  content.
-- [ ] **Sitemap `<lastmod>` dates** — `sitemap.xml.njk` should include
-  `<lastmod>` for each URL
+- [x] **JSON-LD structured data** — Person on homepage, Book on bookshelf,
+  Article on writing/news/links pages
+- [x] **RSS auto-discovery `<link>` tags** — all 4 feeds discoverable from
+  `<head>`
+- [x] **Unique meta descriptions** — `eleventyComputed` derives per-page
+  descriptions based on URL pattern
+- [x] **Sitemap `<lastmod>` dates** — already present, outputs
+  `page.date.toISOString()`
 - [ ] **OG image generation** — auto-generate social cards per page (title +
   author + site name) instead of reusing the 512px favicon
 - [ ] **Canonical URLs on listing pages** — add self-referencing canonicals
@@ -56,44 +49,36 @@ category.
 
 ## RSS Feeds
 
-- [ ] **Full content in RSS** — feeds currently only include excerpts.
-  Switch to `<content:encoded>` with full HTML content.
-- [ ] **Author, category, and `<dc:creator>` tags** — some feeds hardcode
-  author info while others use `meta.name`; unify and add categories.
+- [x] **Full content in RSS** — `<content:encoded>` with CDATA-wrapped HTML
+  in all 4 feeds
+- [x] **Channel descriptions** — meaningful subtitles for each feed
+- [x] **`<category>` tags and `<dc:creator>`** — unified to `meta.name`,
+  categories from item frontmatter tags
 
 ## Design & UX
 
-- [ ] **Skip-to-content link** — WCAG 2.1 AA requirement, helps keyboard
-  users bypass navigation
-- [ ] **`aria-current="page"` on active nav** — currently only color
-  indicates the active page; screen reader users get no indication
-- [ ] **Focus indicators on tab buttons** — the research page tabs
-  (Journal/Conference/Presentations) use `outline-none` with no alternative
-  focus style
-- [ ] **Print stylesheet** — academic site; visitors may print CV,
-  publications, or book notes. At minimum hide nav/footer and remove dark
-  backgrounds.
-- [ ] **Update Twitter → X** — footer and meta tags still reference
-  `twitter.com` instead of `x.com` (currently redirects)
-- [ ] **ARIA labels on RSS icon links** — the RSS SVG links in
-  `writing.html` and `bookshelf.html` have no text content, announcing as
-  "empty link" to screen readers
-- [ ] **Tab panel ARIA roles** — the Alpine-powered tabs on the research
-  page lack `role="tablist"`, `role="tab"`, `role="tabpanel"`,
-  `aria-selected`, and keyboard navigation support
+- [x] **Skip-to-content link** — keyboard-accessible, visually hidden until
+  focused
+- [x] **`aria-current="page"` on active nav** — screen readers can now
+  identify the current page
+- [x] **Focus indicators on tab buttons** — replaced `outline-none` with
+  `focus-visible:ring` on research page tabs
+- [~] **Print stylesheet** — declined
+- [x] **Update Twitter → X** — footer icon link and JSON-LD `sameAs`
+- [x] **ARIA labels on RSS icon links** — all 6 RSS SVG links now have
+  `aria-label`
+- [x] **Tab panel ARIA roles** — `role="tablist"`, `role="tab"`,
+  `role="tabpanel"`, `aria-selected`, `aria-labelledby`, `tabindex`
 
 ## Content
 
-- [ ] **Add `/news/` archive page** — the "What's New" section shows 5
-  items with a "Show more" toggle. A dedicated `/news/` listing page would
-  improve discoverability of older milestones.
+- [~] **Add `/news/` archive page** — declined
 - [ ] **Writing section** — only 2 posts (both from 2023). Either commit to
   regular writing, fold existing posts into About, or hide the section
   until there's more content.
 - [ ] **Homepage photo / headshot** — adds credibility for an academic
   personal site
-- [ ] **Custom 404 page** — currently no `404.html`; Netlify will serve its
-  generic fallback
+- [x] **Custom 404 page** — styled page with nav links, Netlify-compatible
 
 ## Performance
 
