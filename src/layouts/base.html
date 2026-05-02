@@ -12,8 +12,8 @@ type: website
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
 
-  <link rel="stylesheet" href="{{ '/css/tailwind.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/css/syntax-highlighting.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/tailwind.css' | url }}?v={% version %}" />
+  <link rel="stylesheet" href="{{ '/css/syntax-highlighting.css' | url }}?v={% version %}">
 
   <script>
     (function(){var d=localStorage.getItem('darkMode');if(d!==null?JSON.parse(d):window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark')})();

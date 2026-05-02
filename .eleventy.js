@@ -37,6 +37,9 @@ async function imageShortcode(src, alt, sizes = "100vw") {
 }
 
 export default function (eleventyConfig) {
+  // Build-time version for cache busting — computed once, consistent across all pages
+  const buildVersion = Date.now().toString(36);
+
   eleventyConfig.addFilter("monthYearDateFromISO", (dateObj) => {
     return DateTime.fromISO(dateObj).toFormat('LLL yyyy');
   });
@@ -54,6 +57,8 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  eleventyConfig.addShortcode("version", () => buildVersion);
 
   eleventyConfig.setLibrary("md", markdownIt({
     html: true,
