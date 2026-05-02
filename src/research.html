@@ -15,12 +15,11 @@ eleventyNavigation:
     social science methods such as machine learning and natural language processing. My specific areas of expertise
     include ethnographic interviews, participant observation, multi-sited ethnography, networks, natural language
     processing, and deep learning.</p>
-<div x-data="{ tab: 'journal' }">
+<div data-tablist>
     <div role="tablist" aria-label="Publication types" class="grid grid-cols-3 my-8 font-sans text-lg lg:text-2xl">
-        <button id="tab-journal" role="tab" @click="tab = 'journal'"
-            :aria-selected="tab === 'journal'" :tabindex="tab === 'journal' ? 0 : -1"
-            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-800 dark:focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-            :class="tab == 'journal' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
+        <button id="tab-journal" role="tab" data-tab="journal"
+            aria-selected="true" tabindex="0"
+            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-800 dark:focus-visible:ring-primary-600 focus-visible:ring-offset-2 border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600">
             <svg class="flex-none h-10 w-10 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path fill="#FF5722" d="M32,15v28H10c-2.2,0-4-1.8-4-4V15H32z" />
                 <path fill="#FFCCBC" d="M14,5v34c0,2.2-1.8,4-4,4h29c2.2,0,4-1.8,4-4V5H14z" />
@@ -29,10 +28,9 @@ eleventyNavigation:
             </svg>
             <span>Journal articles</span>
         </button>
-        <button id="tab-conference" role="tab" @click="tab = 'conference'"
-            :aria-selected="tab === 'conference'" :tabindex="tab === 'conference' ? 0 : -1"
-            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-800 dark:focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-            :class="tab == 'conference' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
+        <button id="tab-conference" role="tab" data-tab="conference"
+            aria-selected="false" tabindex="-1"
+            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-800 dark:focus-visible:ring-primary-600 focus-visible:ring-offset-2 border-gray-300">
             <svg class="flex-none h-9 w-9 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path fill="#90caf9" d="M40 45L8 45 8 3 30 3 40 13z" />
                 <path fill="#e1f5fe" d="M38.5 14L29 14 29 4.5z" />
@@ -47,10 +45,9 @@ eleventyNavigation:
             </svg>
             <span>Conference papers</span>
         </button>
-        <button id="tab-presentation" role="tab" @click="tab = 'presentation'"
-            :aria-selected="tab === 'presentation'" :tabindex="tab === 'presentation' ? 0 : -1"
-            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-800 dark:focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-            :class="tab == 'presentation' ? 'border-primary-800 text-primary-800 dark:border-primary-600 dark:text-primary-600' : 'border-gray-300'">
+        <button id="tab-presentation" role="tab" data-tab="presentation"
+            aria-selected="false" tabindex="-1"
+            class="flex flex-wrap justify-center hover:text-primary-800 dark:hover:text-primary-600 font-bold py-2 border-b-2 border-dotted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-800 dark:focus-visible:ring-primary-600 focus-visible:ring-offset-2 border-gray-300">
             <svg class="flex-none h-10 w-10 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                 <path fill="#37474f" d="M19.9 31.7H32.599999999999994V33.7H19.9z"
                     transform="rotate(-64.437 26.249 32.75)" />
@@ -71,7 +68,7 @@ eleventyNavigation:
     <div>
         {% for tab in ['journal', 'conference', 'presentation'] %}
         <div role="tabpanel" tabindex="0" aria-labelledby="tab-{{ tab }}"
-            :class="tab === '{{ tab }}' ? '' : 'hidden'">
+            data-tabpanel="{{ tab }}"{% if tab != 'journal' %} class="hidden"{% endif %}>
             {% for item in publications %}
             {% if item.type == tab %}
             <div class="mb-4">

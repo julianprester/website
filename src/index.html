@@ -36,21 +36,32 @@ eleventyNavigation:
         href="https://github.com/julianprester/">writing code</a>. I love travelling the world and believe a passport
     full of stamps is way better than an apartment full of stuff.</p>
 <h2 class="mt-6 pt-6 mb-2 border-t-2 border-dotted border-gray-300 text-2xl font-bold font-sans">What's New</h1>
-    <div x-data="{ show: false }" class="flex flex-col">
-        <table class="table-auto">
+    <table class="table-auto">
+        <tbody>
+            {% for item in news %}
+            {% if loop.index0 < 5 %}
+            <tr>
+                <td class="w-24 py-2 pr-2 align-top">{{ item.date | monthYearDateFromISO | safe }}</td>
+                <td class="py-2 pl-2 align-top">{{ item.content | safe }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+    <details class="mt-4">
+        <summary class="cursor-pointer text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 transition-colors">
+            Show all news…
+        </summary>
+        <table class="table-auto mt-4">
             <tbody>
                 {% for item in news %}
-                {% if loop.index0 < 5 %} <tr>
-                    {% else %}
-                    <tr x-show="show">
-                        {% endif %}
-                        <td class="w-24 py-2 pr-2 align-top">{{ item.date | monthYearDateFromISO | safe }}</td>
-                        <td class="py-2 pl-2 align-top">{{ item.content | safe }}</td>
-                    </tr>
-                    {% endfor %}
+                {% if loop.index0 >= 5 %}
+                <tr>
+                    <td class="w-24 py-2 pr-2 align-top">{{ item.date | monthYearDateFromISO | safe }}</td>
+                    <td class="py-2 pl-2 align-top">{{ item.content | safe }}</td>
+                </tr>
+                {% endif %}
+                {% endfor %}
             </tbody>
         </table>
-        <button @click="show = !show" aria-label="Show more"
-            class="self-end text-primary-800 dark:text-primary-600 dark:hover:text-secondary-200 transition-colors"
-            x-text="show ? '(Show less)' : '(Show more)'"></button>
-    </div>
+    </details>
