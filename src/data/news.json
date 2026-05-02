@@ -1,13 +1,63 @@
 [
     {
+        "title": "Paper Managing Literature Reviews C5-DM RSM",
+        "date": "2026-04-17",
+        "content": "Paper with Gerit Wagner, Roman Lukyanenko and Guy Par\u00e9 on data management in literature reviews accepted for publication in Research Synthesis Methods."
+    },
+    {
+        "title": "Paper GenAI for Literature Reviews JIT",
+        "date": "2026-02-04",
+        "content": "Paper with Gerit Wagner, Reza Mousavi, Roman Lukyanenko and Guy Par\u00e9 on generative artificial intelligence for literature reviews accepted for publication in Journal of Information Technology."
+    },
+    {
+        "title": "Promoted to Senior Lecturer",
+        "date": "2026-01-01",
+        "content": "Promoted to Senior Lecturer at the University of Sydney Business School."
+    },
+    {
+        "title": "Best Reviewer Award Australasian Journal of Information Systems",
+        "date": "2025-12-01",
+        "content": "Received the Best Reviewer Award from the Australasian Journal of Information Systems."
+    },
+    {
+        "title": "Paper Videoconferencing Fatigue JSIS",
+        "date": "2025-06-01",
+        "content": "Paper with Blair Wang developing a labour perspective of videoconferencing fatigue accepted for publication in Journal of Strategic Information Systems."
+    },
+    {
+        "title": "Paper From Gutenberg to GPT ICIS",
+        "date": "2024-12-01",
+        "content": "Paper with Malshika Dias on how journalists make sense of generative AI through occupational history accepted for presentation at the 45th International Conference on Information Systems."
+    },
+    {
+        "title": "Best Reviewer Award Journal of Strategic Information Systems",
+        "date": "2024-12-01",
+        "content": "Received the Best Reviewer Award from the Journal of Strategic Information Systems."
+    },
+    {
+        "title": "Editorial Review Board Member JAIS",
+        "date": "2024-08-01",
+        "content": "Joined the Editorial Review Board of the Journal of the Association for Information Systems."
+    },
+    {
+        "title": "Managing Editor Workshops JAIS",
+        "date": "2024-08-01",
+        "content": "Appointed Managing Editor (Workshops) at the Journal of the Association for Information Systems."
+    },
+    {
+        "title": "ABDC Award for Innovation and Excellence in Research",
+        "date": "2024-01-15",
+        "content": "Digital Nomad research group awarded the ABDC Award for Innovation and Excellence in Research."
+    },
+    {
         "title": "Paper Digital Nomad Identity JIT",
         "date": "2023-11-08",
-        "content": "Paper with Dubravka Cecez-Kecmanovic and Daniel Schlagwein on digital nomad identity accepted for presentation in Journal of Information Technology."
+        "content": "Paper with Dubravka Cecez-Kecmanovic and Daniel Schlagwein on digital nomad identity accepted for publication in Journal of Information Technology."
     },
     {
         "title": "Paper Literature Review Recommendations JDS",
         "date": "2023-04-04",
-        "content": "Paper with Guy Pare and Gerit Wagner on key recommendations for literature reviews accepted for publication in Journal of Decision Systems."
+        "content": "Paper with Guy Par\u00e9 and Gerit Wagner on key recommendations for literature reviews accepted for publication in Journal of Decision Systems."
     },
     {
         "title": "Professor M Weinstock Memorial Prize",
@@ -32,12 +82,12 @@
     {
         "title": "Launch callsforpapers.org",
         "date": "2022-07-01",
-        "content":"Missed another deadline for that special issue that your paper would have fit in perfectly? I've developed <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://callsforpapers.org'>callsforpapers.org</a> to help you stay on top of the latest calls for papers in the IS discipline."
+        "content": "Missed another deadline for that special issue that your paper would have fit in perfectly? I've developed <a class='text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors' href='https://callsforpapers.org'>callsforpapers.org</a> to help you stay on top of the latest calls for papers in the IS discipline."
     },
     {
         "title": "PhD Graduation UNSW",
         "date": "2022-04-01",
-        "content":"PhD! I finally graduated from the UNSW Business School."
+        "content": "PhD! I finally graduated from the UNSW Business School."
     },
     {
         "title": "Lecturer University of Sydney",
@@ -62,7 +112,7 @@
     {
         "title": "Paper Digital Platforms For Knowledge Work JSIS",
         "date": "2021-04-01",
-        "content": "Paper with Gerit Wagner and Guy Pare on digital platforms for knowledge work accepted for publication in The Journal of Strategic Information Systems."
+        "content": "Paper with Gerit Wagner and Guy Par\u00e9 on digital platforms for knowledge work accepted for publication in The Journal of Strategic Information Systems."
     },
     {
         "title": "Paper Digital Platforms Configurations ECIS",
@@ -72,7 +122,7 @@
     {
         "title": "Paper Scientific Impact of Literature Reviews IM",
         "date": "2020-12-01",
-        "content": "Paper with Gerit Wagner, Maria Roche, Guido Schryen, Alexander Benlian, Guy Pare and Mathieu Templier on the scientific impact of literature reviews accepted for publication in Information & Management."
+        "content": "Paper with Gerit Wagner, Maria Roche, Guido Schryen, Alexander Benlian, Guy Par\u00e9 and Mathieu Templier on the scientific impact of literature reviews accepted for publication in Information & Management."
     },
     {
         "title": "Paper Ideational Impact of Literature Reviews DSS",
