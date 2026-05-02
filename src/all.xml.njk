@@ -3,28 +3,34 @@ permalink: all.xml
 eleventyExcludeFromCollections: true
 metadata:
   title: "Julian's Weblog"
+  subtitle: "Writing, book notes, and links from Julian Prester"
   language: en
   url: {{ meta.url }}
-  author:
-    name: {{ meta.name }}
-    email: {{ meta.email }}
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="{{ metadata.url }}" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xml:base="{{ metadata.url }}">
   <channel>
     <title>{{ metadata.title }}</title>
     <link>{{ meta.url }}</link>
-    <atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self" type="application/rss+xml"/>
     <description>{{ metadata.subtitle }}</description>
     <language>{{ metadata.language }}</language>
     {%- for item in collections.allWriting | reverse %}
     <item>
       <title>{{ item.data.title }}</title>
-      <link>{{ item.url }}</link>
-      <description>{{ item.content }}</description>
+      <link>{{ item.url | absoluteUrl(metadata.url) }}</link>
+      <description>{{ item.content | safe }}</description>
+      <content:encoded><![CDATA[{{ item.content | safe }}]]></content:encoded>
       <pubDate>{{ item.date | dateToRfc822 }}</pubDate>
       <dc:creator>{{ meta.name }}</dc:creator>
-      <guid>{{ item.url | absoluteUrl(metadata.url) }}</guid>
+      <guid isPermaLink="true">{{ item.url | absoluteUrl(metadata.url) }}</guid>
+      {%- for tag in item.data.tags %}
+      <category>{{ tag }}</category>
+      {%- endfor %}
     </item>
     {%- endfor %}
   </channel>
