@@ -29,11 +29,12 @@ type: website
 <body x-data="{'darkMode': false}" x-init="
       darkMode = localStorage.getItem('darkMode') ? JSON.parse(localStorage.getItem('darkMode')) : window.matchMedia('(prefers-color-scheme: dark)').matches;
       $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-800 focus:text-white focus:rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600">Skip to content</a>
   <div :class="{ 'dark': darkMode }">
     <div class="min-h-screen dark:bg-gray-900 dark:text-gray-200">
       <div class="container max-w-screen-lg mx-auto px-8">
         {% include "header.html" %}
-        <div class="py-6 font-mono">
+        <div id="main" class="py-6 font-mono">
           {{ content | safe }}
         </div>
         {% include "footer.html" %}
