@@ -77,6 +77,28 @@ export default function (eleventyConfig) {
     return collectionApi.getFilteredByGlob(["src/*.html", "src/writing/*.md", "src/bookshelf/*.md"]);
   });
 
+  // Computed meta descriptions per page type
+  eleventyConfig.addGlobalData("eleventyComputed", {
+    description(data) {
+      const url = data.page.url;
+      const title = data.news?.title || data.title || "";
+      const author = data.author || "";
+      const fallback = "Julian Prester is a Senior Lecturer of Business Information Systems at The University of Sydney. Researching digital work, digital nomadism, and platform work.";
+
+      if (url === '/') return fallback;
+      if (url === '/research/') return "Julian Prester's research on digital work, digital nomadism, and platform work. Publications, conference papers, and presentations.";
+      if (url === '/teaching/') return "Courses taught by Julian Prester — Data Visualisation, Managing Data at Scale, Business Intelligence, and more at the University of Sydney and UNSW.";
+      if (url === '/writing/') return "Latest writing and ideas by Julian Prester on academia, technology, and digital work.";
+      if (url === '/bookshelf/') return "Books that inform Julian Prester's research on digital work with personal reading notes and reviews.";
+      if (url.startsWith('/bookshelf/') && url !== '/bookshelf/') return `${title}${author ? ` by ${author}` : ""} — book notes and review by Julian Prester`;
+      if (url.startsWith('/writing/') && url !== '/writing/' && !url.startsWith('/tags/')) return `${title} — a post by Julian Prester on academia, technology, and digital work`;
+      if (url.startsWith('/links/') && url !== '/links/' && !url.startsWith('/tags/')) return `${title} — a link shared by Julian Prester`;
+      if (url.startsWith('/news/')) return `${title} — news from Julian Prester`;
+      if (url.startsWith('/tags/')) return `Content tagged "${url.replace('/tags/', '').replace(/\/$/, '')}" on Julian Prester's website`;
+      return fallback;
+    }
+  });
+
   eleventyConfig.setBrowserSyncConfig({
     snippetOptions: {
       rule: {
