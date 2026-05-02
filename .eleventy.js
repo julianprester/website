@@ -99,16 +99,6 @@ export default function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.setBrowserSyncConfig({
-    snippetOptions: {
-      rule: {
-        match: /<\/body>/i,
-        fn: function (snippet, match) {
-          return snippet + match;
-        }
-      }
-    }
-  });
   eleventyConfig.addPassthroughCopy('src/assets/favicon');
   eleventyConfig.addPassthroughCopy('src/assets/cv');
   eleventyConfig.addPassthroughCopy('src/assets/pdf');
