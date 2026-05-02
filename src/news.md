@@ -11,4 +11,4 @@ eleventyExcludeFromCollections: true
 
 {{ news.content }}
 
-_Posted {{ news.date | date: '%d %b %Y' }}_
+_Posted on <time datetime="{{ news.date }}">{{ news.date | date: '%d %b %Y' }}</time>_
