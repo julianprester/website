@@ -4,28 +4,36 @@ type: article
 ---
 
 <a href="{{ '/bookshelf/' | url }}">
-    <svg class="inline align-middle h-4 w-4 fill-current text-gray-400" xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 10 16">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L10 2L4 8L10 14L8 16L0 8L8 0Z"></path>
-    </svg>
-    <span>Back to Bookshelf</span>
+  <svg
+    class="inline align-middle h-4 w-4 fill-current text-gray-400"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 10 16"
+  >
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L10 2L4 8L10 14L8 16L0 8L8 0Z"></path>
+  </svg>
+  <span>Back to Bookshelf</span>
 </a>
 <div class="flex flex-col sm:flex-row my-8 space-y-16 sm:space-y-0 sm:space-x-16">
-    <div class="w-3/4 m-auto sm:w-1/4">
-        {% image "./src/assets/cover/" + page.fileSlug + ".jpg", title %}
-    </div>
-    <div class="w-3/4 space-y-8">
-        <h1 class="text-4xl font-bold font-sans">{{ title }}{% if subtitle %}: {{ subtitle }}{% endif %}
-        </h1>
-        <p class="text-2xl dark:text-gray-400">by {{ author }}</p>
-        <p class="dark:text-gray-400">read in <time datetime="{{ page.date | dateToRfc3339 }}">{{ date | monthYearDateFromJSON }}</time></p>
-        <p class="dark:text-gray-400">
-            book info on <a
-                class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors"
-                href="{{ link }}">goodreads</a>
-        </p>
-    </div>
+  <div class="w-3/4 m-auto sm:w-1/4">
+    {% image "./src/assets/cover/" + page.fileSlug + ".jpg", title %}
+  </div>
+  <div class="w-3/4 space-y-8">
+    <h1 class="text-4xl font-bold font-sans">
+      {{ title }}{% if subtitle %}: {{ subtitle }}{% endif %}
+    </h1>
+    <p class="text-2xl dark:text-gray-400">by {{ author }}</p>
+    <p class="dark:text-gray-400">
+      read in
+      <time datetime="{{ page.date | dateToRfc3339 }}">{{ date | monthYearDateFromJSON }}</time>
+    </p>
+    <p class="dark:text-gray-400">
+      book info on
+      <a
+        class="text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors"
+        href="{{ link }}"
+        >goodreads</a
+      >
+    </p>
+  </div>
 </div>
-<div class="markdown mt-16">
-    {{ content | safe }}
-</div>
+<div class="markdown mt-16">{{ content | safe }}</div>

@@ -48,7 +48,7 @@ Mesle interestingly develops a different understanding of time by saying that th
 He says that there is no future out there already pre-determined and waiting to happen.
 Instead, there is always a myriad of possibilities for future action that are always in becoming.
 Again an interesting parallel to what Ingold would call the conditioning flow of action.
-These collective actions, interactions and decision bring new moments or the *future* into being.
+These collective actions, interactions and decision bring new moments or the _future_ into being.
 Mesle then compares the understanding of time that process philosophers have with that of modern physicists.
 He explains how contrary to Newtonian physics process philosophers think that there is no universal time or space that exists as some fixed background on which beings can act but that time is simply the passage---the becoming and perishing---of events.
 

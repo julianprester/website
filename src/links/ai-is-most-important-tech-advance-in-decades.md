@@ -1,7 +1,7 @@
 ---
 title: AI is most important tech advance in decades
 date: 2023-03-21T00:00:00.000Z
-url: 'https://www.bbc.com/news/technology-65032848'
+url: "https://www.bbc.com/news/technology-65032848"
 syndicated: true
 tags:
   - links

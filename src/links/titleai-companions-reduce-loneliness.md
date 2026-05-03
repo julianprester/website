@@ -1,8 +1,8 @@
 ---
 title: AI Companions Reduce Loneliness
-url: 'https://arxiv.org/abs/2407.19096'
+url: "https://arxiv.org/abs/2407.19096"
 date: 2024-09-25T00:00:00.000Z
-thumbnail: 'https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png'
+thumbnail: "https://arxiv.org/static/browse/0.3.4/images/arxiv-logo-fb.png"
 syndicated: true
 tags:
   - links

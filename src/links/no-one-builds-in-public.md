@@ -1,6 +1,6 @@
 ---
 title: No One Builds in Public
-url: 'https://laike9m.com/blog/no-one-builds-in-public,160/'
+url: "https://laike9m.com/blog/no-one-builds-in-public,160/"
 date: 2024-09-25T00:00:00.000Z
 thumbnail: >-
   https://github.com/user-attachments/assets/f9c28944-bbcf-446f-86da-5cf4fef6964b

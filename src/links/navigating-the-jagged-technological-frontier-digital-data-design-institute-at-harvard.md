@@ -2,7 +2,7 @@
 title: >-
   Navigating the Jagged Technological Frontier | Digital Data Design Institute
   at Harvard
-url: 'https://d3.harvard.edu/navigating-the-jagged-technological-frontier/'
+url: "https://d3.harvard.edu/navigating-the-jagged-technological-frontier/"
 date: 2023-10-03T00:00:00.000Z
 syndicated: true
 tags:

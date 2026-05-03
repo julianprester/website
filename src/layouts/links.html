@@ -3,7 +3,14 @@ layout: base
 ---
 
 <div class="markdown">
-    <a href="{{ url }}">{{ title }}</a>
-    {{ content | safe }}
-    <p><i>Posted on <time datetime="{{ page.date | dateToRfc3339 }}">{{ page.date | dayMonthYearDateFromISO }}</time></i></p>
+  <a href="{{ url }}">{{ title }}</a>
+  {{ content | safe }}
+  <p>
+    <i
+      >Posted on
+      <time datetime="{{ page.date | dateToRfc3339 }}"
+        >{{ page.date | dayMonthYearDateFromISO }}</time
+      ></i
+    >
+  </p>
 </div>

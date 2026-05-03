@@ -1,5 +1,5 @@
 ---
-title: 'AI for Bio: State Of The Field'
+title: "AI for Bio: State Of The Field"
 url: >-
   https://www.lesswrong.com/posts/CGegZveogJRGCK3LA/ai-for-bio-state-of-the-field
 date: 2024-09-27T00:00:00.000Z

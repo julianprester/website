@@ -1,4 +1,4 @@
 {
-    "layout": "links",
-    "permalink": "links/{{ page.date | date: '%Y' }}/{{ title | slugify }}/"
+  "layout": "links",
+  "permalink": "links/{{ page.date | date: '%Y' }}/{{ title | slugify }}/"
 }

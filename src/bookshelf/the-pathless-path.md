@@ -9,7 +9,7 @@ date: 2022-03-10
 ---
 
 Despite this being a self-help book, I was interested in it because it talks about many of the topics and issues that I am interested in with my research.
-In "The Pathless Path", Paul Millerd elaborates on a metaphor... *'the pathless path'*.
+In "The Pathless Path", Paul Millerd elaborates on a metaphor... _'the pathless path'_.
 Path here stands for a career path and general way of living.
 He contrasts his idea of the pathless path with the default path that most people follow to progress in their careers.
 

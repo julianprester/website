@@ -21,7 +21,7 @@ At the same time though academic writing cannot be sequenced into a linear proce
 I feel this is especially the case for writing qualitative papers, where once you get to writing the discussion section you have to already rewrite the introduction and background sections.
 It is probably because of this cyclical process that productivity systems such as GTD have never really caught on in academia.
 While structured planning is useful in professional practice, academic writing requires more flexibility than planning.
-A clear workflow as described in the book based on the German sociologist Luhmann's concept of the *Zettelkasten* promises to provide such a system that is at the same time clearly defined but also offers flexibility to let insights emerge.
+A clear workflow as described in the book based on the German sociologist Luhmann's concept of the _Zettelkasten_ promises to provide such a system that is at the same time clearly defined but also offers flexibility to let insights emerge.
 
 The key idea of the smart notes system is about having a set of clearly defined, interconnected writing tasks with intermediate writing output (i.e., notes) that offer immediate feedback and that can be flexibly performed.
 
@@ -62,4 +62,4 @@ This flexibility is what allows notes to freely mingle with other ideas in the s
 Overall, the idea of a deliberate writing practice in the form of smart notes sounds attractive.
 Especially since the approach does not seem to require many changes to the common workflow of academic reading and writing it is something that can be easily implemented.
 To me the smart notes approach can be a good habit to practice writing in your own words based on what you read.
-Whether it can really help me come up with new ideas by thinking *in* the smart notes system remains to be seen.
+Whether it can really help me come up with new ideas by thinking _in_ the smart notes system remains to be seen.

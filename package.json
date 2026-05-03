@@ -9,7 +9,9 @@
     "grab": "node util/grab_articles.js",
     "schedule": "node util/schedule_articles.js",
     "syndicate": "node util/syndicate_articles.js",
-    "status": "node util/status_update.js"
+    "status": "node util/status_update.js",
+    "format": "prettier --write 'src/**/!(*.xml).{njk,html}' 'src/**/*.{md,js,json,css}' '.eleventy.js' 'tailwind.config.js' 'postcss.config.js'",
+    "format:check": "prettier --check 'src/**/!(*.xml).{njk,html}' 'src/**/*.{md,js,json,css}' '.eleventy.js' 'tailwind.config.js' 'postcss.config.js'"
   },
   "keywords": [],
   "author": "Julian Prester",
@@ -33,6 +35,7 @@
     "openai": "^4.104.0",
     "postcss": "^8.5.13",
     "postcss-cli": "^11.0.1",
+    "prettier": "^3.8.3",
     "tailwindcss": "^3.4.19",
     "turndown": "^7.2.4",
     "twitter-api-v2": "^1.29.0"

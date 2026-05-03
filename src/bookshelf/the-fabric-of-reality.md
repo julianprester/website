@@ -3,7 +3,7 @@ tags: book
 layout: book
 title: The Fabric of Reality
 subtitle: The Science of Parallel Universes – and Its Implications
-author:  David Deutsch
+author: David Deutsch
 link: https://www.goodreads.com/book/show/177068.The_Fabric_of_Reality
 date: 2022-01-12
 ---

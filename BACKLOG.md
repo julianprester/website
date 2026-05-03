@@ -44,8 +44,7 @@ Items discovered during the site audit. Checked items are implemented.
   `page.date.toISOString()`
 - [ ] **OG image generation** — auto-generate social cards per page (title +
   author + site name) instead of reusing the 512px favicon
-- [ ] **Canonical URLs on listing pages** — add self-referencing canonicals
-  to `bookshelf.html`, `writing.html`, `tags.html`
+- [x] **Canonical URLs on listing pages** — already present via `meta.html` on every page
 
 ## RSS Feeds
 
@@ -82,19 +81,17 @@ Items discovered during the site audit. Checked items are implemented.
 
 ## Performance
 
-- [ ] **Bookshelf grid image optimization** — all 23 covers load eagerly.
-  Add explicit `width`/`height` to prevent layout shift; consider
-  `fetchpriority="low"` for below-fold images.
-- [ ] **Alpine.js bundle size** — the full CDN build is ~44KB but only 3
-  components use it (dark mode, show-more, tabs). Consider the CSP build
-  (~15KB) or vanilla JS (~1KB).
+- [~] **Bookshelf grid image optimization** — already well-optimized
+  (width/height, loading=lazy, decoding=async); `fetchpriority` infeasible
+  from the shortcode without a counter
+- [x] **Alpine.js bundle size** — replaced with ~1KB inline vanilla JS + `<details>`
 
 ## Nice-to-Have
 
 - [ ] **Webmention support** — for an academic blog, webmentions enable
   cross-blog conversations
-- [ ] **Client-side search** — Pagefind or Lunr for finding books, posts,
-  and links
+- [ ] **Client-side search** — Pagefind (zero-config, ~200KB). Add to build
+  pipeline, search input in nav. Covers all book notes, writing, links.
 - [ ] **PWA / offline support** — service worker to cache pages for offline
   reading of book notes
 - [ ] **CI status badge in README** — build/deploy status for visitors

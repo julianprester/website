@@ -36,7 +36,7 @@ To complete his argument, he then says because how the jaguar sees us matters to
 Broadly speaking the book falls in the field of semiotics.
 That is understanding the world and reality as made up from signs.
 Kohn is taking a particularly interesting semiotic perspective based on Pierce's work.
-He talks about *living signs* and *semiosis* as the process through which one living sign gives rise to another one through ongoing interpretation of such signs.
+He talks about _living signs_ and _semiosis_ as the process through which one living sign gives rise to another one through ongoing interpretation of such signs.
 For signs to be alive means that they are not static, but that they can grow and change over time.
 
 The key argument of Kohn's work is that all selves are alive and they can be human or non-human.

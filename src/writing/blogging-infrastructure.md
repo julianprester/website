@@ -31,7 +31,9 @@ Tailwind is a CSS framework that consists of a set of pre-defined utility classe
 For example, we can use several utility classes on a button:
 
 ```html
-<button class="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">
+<button
+  class="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"
+>
   Launch Website
 </button>
 ```
@@ -54,8 +56,8 @@ For example, we can build a simple counter like this:
 
 ```html
 <div x-data="{ count: 0 }">
-    <button x-on:click="count++">Increment</button>
-    <span x-text="count"></span>
+  <button x-on:click="count++">Increment</button>
+  <span x-text="count"></span>
 </div>
 ```
 

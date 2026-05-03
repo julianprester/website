@@ -13,4 +13,4 @@ tags:
 scheduled: 2024-11-02T03:00:00.000Z
 ---
 
-PwC research suggests that forcing employees back to the office full-time can actually *harm* company culture and engagement. Maybe Amazon and other companies pushing RTO mandates should take note? Flexibility fosters a stronger sense of belonging and autonomy, not surveillance.
+PwC research suggests that forcing employees back to the office full-time can actually _harm_ company culture and engagement. Maybe Amazon and other companies pushing RTO mandates should take note? Flexibility fosters a stronger sense of belonging and autonomy, not surveillance.

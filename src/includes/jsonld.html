@@ -1,89 +1,86 @@
-{#-
-  JSON-LD structured data. Outputs the appropriate Schema.org type based on
-  page URL pattern.
--#}
+{#- JSON-LD structured data. Outputs the appropriate Schema.org type based on page URL pattern. -#}
 {%- if page.url == '/' -%}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "{{ meta.name }}",
-  "url": "{{ meta.url }}",
-  "email": "{{ meta.email }}",
-  "jobTitle": "Senior Lecturer of Business Information Systems",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "The University of Sydney",
-    "url": "https://www.sydney.edu.au"
-  },
-  "alumniOf": [
-    {
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ meta.name }}",
+    "url": "{{ meta.url }}",
+    "email": "{{ meta.email }}",
+    "jobTitle": "Senior Lecturer of Business Information Systems",
+    "affiliation": {
       "@type": "Organization",
-      "name": "University of New South Wales",
-      "url": "https://www.unsw.edu.au"
+      "name": "The University of Sydney",
+      "url": "https://www.sydney.edu.au"
     },
-    {
-      "@type": "Organization",
-      "name": "University of Regensburg",
-      "url": "https://www.uni-regensburg.de"
-    }
-  ],
-  "sameAs": {{ meta.sameAs | dump | safe }}
-}
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "University of New South Wales",
+        "url": "https://www.unsw.edu.au"
+      },
+      {
+        "@type": "Organization",
+        "name": "University of Regensburg",
+        "url": "https://www.uni-regensburg.de"
+      }
+    ],
+    "sameAs": {{ meta.sameAs | dump | safe }}
+  }
 </script>
 {%- elif '/bookshelf/' in page.url and page.url != '/bookshelf/' and '/tags/' not in page.url -%}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Book",
-  "name": "{{ title }}{% if subtitle %}: {{ subtitle }}{% endif %}",
-  "author": "{{ author }}",
-  "sameAs": "{{ link }}"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "{{ title }}{% if subtitle %}: {{ subtitle }}{% endif %}",
+    "author": "{{ author }}",
+    "sameAs": "{{ link }}"
+  }
 </script>
 {%- elif '/writing/' in page.url and page.url != '/writing/' and '/tags/' not in page.url -%}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ title }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ meta.name }}",
-    "url": "{{ meta.url }}"
-  },
-  "datePublished": "{{ page.date | dateToRfc3339 }}",
-  "url": "{{ meta.url }}{{ page.url }}"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ meta.name }}",
+      "url": "{{ meta.url }}"
+    },
+    "datePublished": "{{ page.date | dateToRfc3339 }}",
+    "url": "{{ meta.url }}{{ page.url }}"
+  }
 </script>
 {%- elif '/news/' in page.url -%}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ news.title }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ meta.name }}",
-    "url": "{{ meta.url }}"
-  },
-  "datePublished": "{{ news.date }}",
-  "url": "{{ meta.url }}{{ page.url }}"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ news.title }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ meta.name }}",
+      "url": "{{ meta.url }}"
+    },
+    "datePublished": "{{ news.date }}",
+    "url": "{{ meta.url }}{{ page.url }}"
+  }
 </script>
 {%- elif '/links/' in page.url and page.url != '/links/' and '/tags/' not in page.url -%}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "{{ title }}",
-  "author": {
-    "@type": "Person",
-    "name": "{{ meta.name }}",
-    "url": "{{ meta.url }}"
-  },
-  "datePublished": "{{ page.date | dateToRfc3339 }}",
-  "url": "{{ meta.url }}{{ page.url }}"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ meta.name }}",
+      "url": "{{ meta.url }}"
+    },
+    "datePublished": "{{ page.date | dateToRfc3339 }}",
+    "url": "{{ meta.url }}{{ page.url }}"
+  }
 </script>
 {%- endif -%}

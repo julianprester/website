@@ -1,7 +1,7 @@
 ---
 title: Brainstorm Questions Not Ideas
 date: 2023-03-14T00:00:00.000Z
-url: 'https://www.muledesign.com/blog/brainstorm-questions'
+url: "https://www.muledesign.com/blog/brainstorm-questions"
 syndicated: true
 tags:
   - links

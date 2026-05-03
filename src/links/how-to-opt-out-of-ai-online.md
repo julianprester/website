@@ -1,6 +1,6 @@
 ---
 title: How to Opt Out of A.I. Online
-url: 'https://www.newyorker.com/culture/infinite-scroll/how-to-opt-out-of-ai-online'
+url: "https://www.newyorker.com/culture/infinite-scroll/how-to-opt-out-of-ai-online"
 date: 2024-10-04T21:16:17.632Z
 thumbnail: >-
   https://media.newyorker.com/photos/66fc4d26e72e17242335986b/16:9/w_1280,c_limit/NewYorker_AIescape_final%20copy.jpg

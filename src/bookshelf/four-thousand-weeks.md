@@ -3,7 +3,7 @@ tags: book
 layout: book
 title: Four Thousand Weeks
 subtitle: Time Management for Mortals
-author:  Oliver Burkeman
+author: Oliver Burkeman
 link: https://www.goodreads.com/book/show/55717229-four-thousand-weeks
 date: 2021-12-20
 ---
@@ -20,7 +20,7 @@ Workers got up with the circadian cycle, even experiencing variations in the len
 Time was not something abstract and separate from life.
 Time was inextricably enmeshed with their daily work and lives.
 Their rhythms of life emerged from the work tasks themselves.
-Burkeman calls this a *task-oriented understanding of time*.
+Burkeman calls this a _task-oriented understanding of time_.
 
 Today we have aradically different understanding of time.
 We are able to talk about tasks and events in terms of concrete units of time.
@@ -36,11 +36,11 @@ Based on this interesting review of the development of our modern understanding 
 
 Interestingly, Burkeman refers to Heidegger as a way out of this dilemma.
 He argues that we need to acknowledge our limitations as human beings, always already finding ourselves thrown into this time and place, uncertain about what comes next.
-Here he draws from Heidegger's idea that we *are* time.
+Here he draws from Heidegger's idea that we _are_ time.
 There is no meaningful way of thinking about a person's existence except as a sequence of moments of time.
 This is a truly [process philosophical](../process-philosophy) understanding of time.
 
-Another point that Burkeman makes and that resonates well with my own work on digital nomads and temporal rhythms is the notion of *temporal relationality*.
+Another point that Burkeman makes and that resonates well with my own work on digital nomads and temporal rhythms is the notion of _temporal relationality_.
 Classic economical theory suggests that time is a regular good with the implication that the more of it you command the more valuable it is.
 However, time is also a networked or relational good.
 It derives its value from within the unfolding of relationships over time.

@@ -2,37 +2,37 @@
 @tailwind components;
 
 .markdown {
-    & h1 {
-        @apply text-4xl font-bold font-sans mb-8;
-    }
+  & h1 {
+    @apply text-4xl font-bold font-sans mb-8;
+  }
 
-    & h2 {
-        @apply text-2xl font-bold font-sans mb-4;
-    }
+  & h2 {
+    @apply text-2xl font-bold font-sans mb-4;
+  }
 
-    & h3 {
-        @apply text-2xl font-sans mb-4;
-    }
+  & h3 {
+    @apply text-2xl font-sans mb-4;
+  }
 
-    & p {
-        @apply my-6;
-    }
+  & p {
+    @apply my-6;
+  }
 
-    & a {
-        @apply text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors;
-    }
+  & a {
+    @apply text-primary-800 dark:text-primary-600 hover:text-secondary-200 dark:hover:text-secondary-200 border-b border-dotted border-primary-800 dark:border-primary-600 hover:border-secondary-200 dark:hover:border-secondary-200 transition-colors;
+  }
 
-    & blockquote {
-        @apply my-12 sm:ml-8 pl-8 text-2xl font-bold font-sans italic border-l-2 border-dotted border-gray-300;
-    }
+  & blockquote {
+    @apply my-12 sm:ml-8 pl-8 text-2xl font-bold font-sans italic border-l-2 border-dotted border-gray-300;
+  }
 
-    & ul {
-        @apply list-disc list-outside pl-6;
-    }
+  & ul {
+    @apply list-disc list-outside pl-6;
+  }
 
-    & ol {
-        @apply list-decimal list-outside pl-6;
-    }
+  & ol {
+    @apply list-decimal list-outside pl-6;
+  }
 }
 
 @tailwind utilities;

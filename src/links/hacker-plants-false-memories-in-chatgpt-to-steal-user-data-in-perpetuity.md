@@ -3,7 +3,7 @@ title: Hacker plants false memories in ChatGPT to steal user data in perpetuity
 url: >-
   https://arstechnica.com/security/2024/09/false-memories-planted-in-chatgpt-give-hacker-persistent-exfiltration-channel/
 date: 2024-09-25T00:00:00.000Z
-thumbnail: 'https://cdn.arstechnica.net/wp-content/uploads/2024/09/memory-760x380.jpg'
+thumbnail: "https://cdn.arstechnica.net/wp-content/uploads/2024/09/memory-760x380.jpg"
 syndicated: true
 tags:
   - links

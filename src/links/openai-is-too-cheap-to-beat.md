@@ -1,6 +1,6 @@
 ---
 title: OpenAI is too cheap to beat
-url: 'https://generatingconversation.substack.com/p/openai-is-too-cheap-to-beat'
+url: "https://generatingconversation.substack.com/p/openai-is-too-cheap-to-beat"
 date: 2023-10-14T00:00:00.000Z
 syndicated: true
 tags:

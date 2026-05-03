@@ -39,7 +39,7 @@ Fifth, similarly, when engaging with individuals we should listen to them and tr
 
 Sixth, Scouts look for opportunities to learn from their mistakes and update their beliefs. For a scout new information is not a threat to one's beliefs or reasoning process, but an opportunity to improve. Instead of dismissing them as outliers, they actively seek exceptions to their beliefs and focus in on observations that they cannot yet explain with their current theory.
 
-> "But most of the time, *being* wrong doesn't mean you *did* something wrong. It's not something you need to apologize for, and the appropriate attitude to have about it is neither defensive nor humbly self-flagellating, but matter-of-fact. Even the language scouts use to describe being wrong reflects this attitude. Instead of 'admitting a mistake,' scouts will sometimes talk about 'updating'."
+> "But most of the time, _being_ wrong doesn't mean you _did_ something wrong. It's not something you need to apologize for, and the appropriate attitude to have about it is neither defensive nor humbly self-flagellating, but matter-of-fact. Even the language scouts use to describe being wrong reflects this attitude. Instead of 'admitting a mistake,' scouts will sometimes talk about 'updating'."
 
 Your worldview is a living document meant to be revised.
 

@@ -8,7 +8,7 @@ link: https://www.goodreads.com/book/show/26312997-peak
 date: 2020-06-01
 ---
 
-The key concept that Ericsson develops in this book is what he refers to *deliberate practice*.
+The key concept that Ericsson develops in this book is what he refers to _deliberate practice_.
 He distinguished deliberate practice from common practice as systematic and purposeful practice.
 Deliberate practice requires focused attention on the task at hand.
 Deliberate practice also requires clear and measurable goals one is working towards.

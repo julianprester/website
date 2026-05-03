@@ -1,5 +1,5 @@
 ---
-title: 'With 10x growth since 2023, Llama is the leading engine of AI innovation'
+title: "With 10x growth since 2023, Llama is the leading engine of AI innovation"
 url: >-
   https://ai.meta.com/blog/llama-usage-doubled-may-through-july-2024/?_fb_noscript=1
 date: 2024-09-28T00:00:00.000Z
