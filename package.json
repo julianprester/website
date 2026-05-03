@@ -10,8 +10,8 @@
     "schedule": "node util/schedule_articles.js",
     "syndicate": "node util/syndicate_articles.js",
     "status": "node util/status_update.js",
-    "format": "prettier --write 'src/**/!(*.xml).{njk,html}' 'src/**/*.{md,js,json,css}' '.eleventy.js' 'tailwind.config.js' 'postcss.config.js'",
-    "format:check": "prettier --check 'src/**/!(*.xml).{njk,html}' 'src/**/*.{md,js,json,css}' '.eleventy.js' 'tailwind.config.js' 'postcss.config.js'"
+    "format": "prettier --write 'src/**/*.{md,js,json,css}' '.eleventy.js' 'tailwind.config.js' 'postcss.config.js'",
+    "format:check": "prettier --check 'src/**/*.{md,js,json,css}' '.eleventy.js' 'tailwind.config.js' 'postcss.config.js'"
   },
   "keywords": [],
   "author": "Julian Prester",

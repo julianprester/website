@@ -3,12 +3,5 @@
   "singleQuote": false,
   "tabWidth": 2,
   "trailingComma": "all",
-  "printWidth": 100,
-  "overrides": [
-    {
-      "files": ["*.njk", "*.html"],
-      "excludeFiles": ["*.xml.njk"],
-      "options": { "parser": "html" }
-    }
-  ]
+  "printWidth": 100
 }

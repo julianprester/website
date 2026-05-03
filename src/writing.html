@@ -12,11 +12,7 @@ eleventyNavigation:
     <p class="mb-4">
       Latest ideas
       <a href="{{ '/writing.xml' | url }}" aria-label="Writing RSS feed">
-        <svg
-          class="inline w-4 h-4 fill-current"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 256 256"
-        >
+        <svg class="inline w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
           <circle cx="68" cy="189" r="24"></circle>
           <path d="M160 213h-34a82 82 0 0 0-82-82V97a116 116 0 0 1 116 116z"></path>
           <path d="M184 213A140 140 0 0 0 44 73V38a175 175 0 0 1 175 175z"></path>
@@ -36,11 +32,7 @@ eleventyNavigation:
     <p class="mb-4">
       Found elsewhere
       <a href="{{ '/links.xml' | url }}" aria-label="Links RSS feed">
-        <svg
-          class="inline w-4 h-4 fill-current"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 256 256"
-        >
+        <svg class="inline w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
           <circle cx="68" cy="189" r="24"></circle>
           <path d="M160 213h-34a82 82 0 0 0-82-82V97a116 116 0 0 1 116 116z"></path>
           <path d="M184 213A140 140 0 0 0 44 73V38a175 175 0 0 1 175 175z"></path>
@@ -49,10 +41,8 @@ eleventyNavigation:
     </p>
     <div class="markdown">
       {%- for link in collections.links | reverse -%}
-      <p>
-        <a href="{{ link.data.url }}">{{ link.data.title }}</a> {{ link.content | rawText }}
-        <a href="{{ link.url }}">#</a>
-      </p>
+      <p><a href="{{ link.data.url }}">{{ link.data.title }}</a> {{ link.content | rawText }} <a
+          href="{{ link.url }}">#</a></p>
       {% endfor %}
     </div>
   </div>

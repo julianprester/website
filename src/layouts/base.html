@@ -4,110 +4,84 @@ author: Julian Prester
 type: website
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="antialiased">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
-    />
 
-    <link rel="stylesheet" href="{{ '/css/tailwind.css' | url }}?v={% version %}" />
-    <link rel="stylesheet" href="{{ '/css/syntax-highlighting.css' | url }}?v={% version %}" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
 
-    <script>
-      ;(function () {
-        var d = localStorage.getItem("darkMode")
-        if (d !== null ? JSON.parse(d) : window.matchMedia("(prefers-color-scheme:dark)").matches)
-          document.documentElement.classList.add("dark")
-      })()
-    </script>
+  <link rel="stylesheet" href="{{ '/css/tailwind.css' | url }}?v={% version %}" />
+  <link rel="stylesheet" href="{{ '/css/syntax-highlighting.css' | url }}?v={% version %}">
 
-    <script
-      defer
-      data-domain="julianprester.com"
-      src="https://pl.julianprester.com/js/script.js"
-    ></script>
+  <script>
+    (function(){var d=localStorage.getItem('darkMode');if(d!==null?JSON.parse(d):window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark')})();
+  </script>
 
-    {% include "meta.html" %} {% include "favicon.html" %} {% include "jsonld.html" %}
-  </head>
+  <script defer data-domain="julianprester.com" src="https://pl.julianprester.com/js/script.js"></script>
 
-  <body>
-    <a
-      href="#main"
-      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-800 focus:text-white focus:rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600"
-      >Skip to content</a
-    >
-    <div class="min-h-screen dark:bg-gray-900 dark:text-gray-200">
-      <div class="container max-w-screen-lg mx-auto px-8">
-        {% include "header.html" %}
-        <div id="main" class="py-6 font-mono">{{ content | safe }}</div>
-        {% include "footer.html" %}
+  {% include "meta.html" %}
+
+  {% include "favicon.html" %}
+
+  {% include "jsonld.html" %}
+
+</head>
+
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-800 focus:text-white focus:rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600">Skip to content</a>
+  <div class="min-h-screen dark:bg-gray-900 dark:text-gray-200">
+    <div class="container max-w-screen-lg mx-auto px-8">
+      {% include "header.html" %}
+      <div id="main" class="py-6 font-mono">
+        {{ content | safe }}
       </div>
+      {% include "footer.html" %}
     </div>
+  </div>
 
-    <script>
-      ;(function () {
-        // Dark mode toggle
-        document.querySelectorAll(".dark-toggle").forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            var dark = document.documentElement.classList.toggle("dark")
-            localStorage.setItem("darkMode", JSON.stringify(dark))
-          })
-        })
+  <script>
+    (function(){
+      // Dark mode toggle
+      document.querySelectorAll('.dark-toggle').forEach(function(btn){
+        btn.addEventListener('click',function(){
+          var dark=document.documentElement.classList.toggle('dark');
+          localStorage.setItem('darkMode',JSON.stringify(dark));
+        });
+      });
 
-        // Mobile menu toggle
-        document.querySelectorAll("[data-menu-toggle]").forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            var id = btn.getAttribute("data-menu-toggle")
-            var menu = document.getElementById(id)
-            if (menu) {
-              var open = !menu.classList.contains("hidden")
-              menu.classList.toggle("hidden")
-              btn.setAttribute("aria-expanded", String(open))
-            }
-          })
-        })
+      // Mobile menu toggle
+      document.querySelectorAll('[data-menu-toggle]').forEach(function(btn){
+        btn.addEventListener('click',function(){
+          var id=btn.getAttribute('data-menu-toggle');
+          var menu=document.getElementById(id);
+          if(menu){
+            var open=!menu.classList.contains('hidden');
+            menu.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded',String(open));
+          }
+        });
+      });
 
-        // Research tab panels
-        document.querySelectorAll("[data-tablist]").forEach(function (tablist) {
-          tablist.querySelectorAll("[data-tab]").forEach(function (tab) {
-            tab.addEventListener("click", function () {
-              var name = tab.getAttribute("data-tab")
-              tablist.querySelectorAll("[data-tab]").forEach(function (t) {
-                t.setAttribute("aria-selected", "false")
-                t.setAttribute("tabindex", "-1")
-                t.classList.remove(
-                  "border-primary-800",
-                  "text-primary-800",
-                  "dark:border-primary-600",
-                  "dark:text-primary-600",
-                )
-                t.classList.add("border-gray-300")
-              })
-              tab.setAttribute("aria-selected", "true")
-              tab.setAttribute("tabindex", "0")
-              tab.classList.remove("border-gray-300")
-              tab.classList.add(
-                "border-primary-800",
-                "text-primary-800",
-                "dark:border-primary-600",
-                "dark:text-primary-600",
-              )
-              tablist.querySelectorAll("[data-tabpanel]").forEach(function (p) {
-                p.classList.add("hidden")
-              })
-              var panel = tablist.querySelector('[data-tabpanel="' + name + '"]')
-              if (panel) panel.classList.remove("hidden")
-            })
-          })
-          // Activate first tab on load
-          var first = tablist.querySelector("[data-tab]")
-          if (first) first.click()
-        })
-      })()
-    </script>
-  </body>
+      // Research tab panels
+      document.querySelectorAll('[data-tablist]').forEach(function(tablist){
+        tablist.querySelectorAll('[data-tab]').forEach(function(tab){
+          tab.addEventListener('click',function(){
+            var name=tab.getAttribute('data-tab');
+            tablist.querySelectorAll('[data-tab]').forEach(function(t){t.setAttribute('aria-selected','false');t.setAttribute('tabindex','-1');t.classList.remove('border-primary-800','text-primary-800','dark:border-primary-600','dark:text-primary-600');t.classList.add('border-gray-300');});
+            tab.setAttribute('aria-selected','true');tab.setAttribute('tabindex','0');tab.classList.remove('border-gray-300');tab.classList.add('border-primary-800','text-primary-800','dark:border-primary-600','dark:text-primary-600');
+            tablist.querySelectorAll('[data-tabpanel]').forEach(function(p){p.classList.add('hidden');});
+            var panel=tablist.querySelector('[data-tabpanel="'+name+'"]');
+            if(panel)panel.classList.remove('hidden');
+          });
+        });
+        // Activate first tab on load
+        var first=tablist.querySelector('[data-tab]');
+        if(first)first.click();
+      });
+    })();
+  </script>
+</body>
+
 </html>
