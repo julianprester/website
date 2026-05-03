@@ -4,17 +4,14 @@ Items discovered during the site audit. Checked items are implemented.
 
 ## Architecture & Build
 
-- [ ] **Tailwind CSS v4 migration** — full config format rewrite
-  (`tailwind.config.js` → CSS-based config). Will also unlock v4 performance
-  improvements and smaller CSS output.
+- [x] **Tailwind CSS v4 migration** — CSS-based config, smaller output (27KB)
 - [~] **CSS / HTML minification** — declined
 - [x] **Cache busting** — `?v=` build-timestamp query param on CSS links for
   `/css/tailwind.css` and `/js/alpine.js` so CDN caches don't serve stale
   assets
-- [ ] **RSS plugin virtual templates** — the RSS plugin v3.0.0 added a
-  "Virtual Template" method that could replace the 4 separate XML files
-  (`all.xml.njk`, `bookshelf.xml.njk`, `links.xml.njk`, `writing.xml.njk`)
-  with config calls in `.eleventy.js`
+- [~] **RSS plugin virtual templates** — explored; `feedPlugin` would
+  regress `<content:encoded>`, `<category>`, and links feed behavior.
+  Not worth the trade-off.
 - [ ] **Drop `grab_articles.js` heavy dependencies** — `openai`, `axios`,
   `turndown` are only used by this one script. Consider extracting to a
   separate package or simplifying. Also evaluate `openai` v4→v6 upgrade.
