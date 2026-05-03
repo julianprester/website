@@ -1,4 +1,7 @@
-import { DateTime } from "luxon"
+import { DateTime, Settings } from "luxon"
+
+Settings.defaultLocale = "en-AU"
+
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation"
 import eleventyImagePlugin from "@11ty/eleventy-img"
 import eleventySyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
