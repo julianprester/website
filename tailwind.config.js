@@ -46,9 +46,4 @@ export const theme = {
     mono: ["Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", "monospace"],
   },
 }
-export const variants = {
-  extend: {
-    scale: ["group-hover"],
-  },
-}
 export const plugins = []
