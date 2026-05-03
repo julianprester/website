@@ -8,7 +8,7 @@ Items discovered during the site audit. Checked items are implemented.
   (`tailwind.config.js` → CSS-based config). Will also unlock v4 performance
   improvements and smaller CSS output.
 - [~] **CSS / HTML minification** — declined
-- [ ] **Cache busting** — hash-based filenames or query strings for
+- [x] **Cache busting** — `?v=` build-timestamp query param on CSS links for
   `/css/tailwind.css` and `/js/alpine.js` so CDN caches don't serve stale
   assets
 - [ ] **RSS plugin virtual templates** — the RSS plugin v3.0.0 added a
@@ -24,11 +24,13 @@ Items discovered during the site audit. Checked items are implemented.
   add startup validation.
 - [ ] **GitHub Actions: cache `node_modules`** — add `cache: 'npm'` to all
   `actions/setup-node` steps (moot if workflows are being removed)
-- [ ] **Add linting / formatting** — ESLint, Prettier, `.editorconfig`.
-  Templates have inconsistent indentation (mix of 2-space and 4-space).
+- [x] **Add linting / formatting** — `.editorconfig` + `.prettierrc` for JS/JSON/CSS/MD
 - [ ] **Missing `tags` in generated link posts** — `grab_articles.js` does
   not write a `tags: links` field in frontmatter, so newer links may not
   appear in `collections.links` (which `links.xml.njk` depends on).
+- [ ] **4 link filenames prefixed with "title"** — `grab_articles.js` bug
+  where Wallabag API returns `"title: ..."` as the title string. Files live
+  at wrong URLs; renaming requires 301 redirects.
 - [ ] **Auto-merge socialbot PRs** — if LLM-generated tweets are considered
   pre-approved, add GitHub Actions auto-merge to avoid accumulating open PRs.
 
@@ -42,7 +44,7 @@ Items discovered during the site audit. Checked items are implemented.
   descriptions based on URL pattern
 - [x] **Sitemap `<lastmod>` dates** — already present, outputs
   `page.date.toISOString()`
-- [ ] **OG image generation** — auto-generate social cards per page (title +
+- [ ] **OG image generation** — dedicated social card instead of favicon — auto-generate social cards per page (title +
   author + site name) instead of reusing the 512px favicon
 - [x] **Canonical URLs on listing pages** — already present via `meta.html` on every page
 
@@ -88,7 +90,7 @@ Items discovered during the site audit. Checked items are implemented.
 
 ## Nice-to-Have
 
-- [ ] **Webmention support** — for an academic blog, webmentions enable
+- [x] **IndieWeb `rel="me"` links** — social profile links in footer — for an academic blog, webmentions enable
   cross-blog conversations
 - [ ] **Client-side search** — Pagefind (zero-config, ~200KB). Add to build
   pipeline, search input in nav. Covers all book notes, writing, links.
