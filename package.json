@@ -7,14 +7,10 @@
   "bugs": "https://github.com/julianprester/website/issues",
   "scripts": {
     "clean": "rm -rf public",
-    "start": "eleventy --serve & postcss src/styles/*.css --dir public/css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production postcss src/styles/*.css --dir public/css",
-    "grab": "node util/grab_articles.js",
-    "schedule": "node util/schedule_articles.js",
-    "syndicate": "node util/syndicate_articles.js",
-    "status": "node util/status_update.js",
-    "format": "prettier --write 'src/**/*.{md,js,json,css}' '.eleventy.js' 'tailwind.config.js' 'postcss.config.js'",
-    "format:check": "prettier --check 'src/**/*.{md,js,json,css}' '.eleventy.js' 'tailwind.config.js' 'postcss.config.js'"
+    "start": "eleventy --serve & tailwindcss -i src/styles/tailwind.css -o public/css/tailwind.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && tailwindcss -i src/styles/tailwind.css -o public/css/tailwind.css --minify",
+    "format": "prettier --write 'src/**/*.{md,js,json,css}' '.eleventy.js'",
+    "format:check": "prettier --check 'src/**/*.{md,js,json,css}' '.eleventy.js'"
   },
   "keywords": [],
   "author": "Julian Prester",
@@ -24,27 +20,15 @@
     "node": ">=20"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.2.4",
     "@11ty/eleventy": "^3.1.5",
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-    "@octokit/rest": "^22.0.1",
-    "autoprefixer": "^10.5.0",
-    "axios": "^1.15.2",
-    "gray-matter": "^4.0.3",
     "luxon": "^3.7.2",
     "markdown-it": "^14.1.0",
-    "openai": "^4.104.0",
-    "postcss": "^8.5.13",
-    "postcss-cli": "^11.0.1",
     "prettier": "^3.8.3",
-    "@tailwindcss/postcss": "^4.2.4",
-    "tailwindcss": "^4.2.4",
-    "turndown": "^7.2.4",
-    "twitter-api-v2": "^1.29.0"
-  },
-  "dependencies": {
-    "sharp": "^0.34.5"
+    "tailwindcss": "^4.2.4"
   }
 }
