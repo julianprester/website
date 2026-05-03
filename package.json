@@ -1,7 +1,10 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "Julian Prester's personal website — built with Eleventy, Tailwind CSS, and Alpine.js",
+  "description": "Julian Prester's personal website — built with Eleventy and Tailwind CSS",
+  "homepage": "https://julianprester.com",
+  "repository": "github:julianprester/website",
+  "bugs": "https://github.com/julianprester/website/issues",
   "scripts": {
     "clean": "rm -rf public",
     "start": "eleventy --serve & postcss src/styles/*.css --dir public/css --watch",
