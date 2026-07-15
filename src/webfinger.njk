@@ -7,8 +7,7 @@ permalink: "webfinger/{{ user.username | slug }}.json"
 eleventyExcludeFromCollections: true
 ---
 {
-  "subject": "acct:{{ user.username }}@{{ user.domain }}",
-  "aliases": ["mailto:{{ user.email }}"],
+  "subject": "acct:{{ user.email }}",
   "links": [
     {
       "rel": "http://openid.net/specs/connect/1.0/issuer",
