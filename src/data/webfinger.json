@@ -4,5 +4,11 @@
     "domain": "julianprester.com",
     "email": "hi@julianprester.com",
     "issuer": "https://id.julianprester.com"
+  },
+  {
+    "username": "malshika",
+    "domain": "julianprester.com",
+    "email": "malshika@julianprester.com",
+    "issuer": "https://id.julianprester.com"
   }
 ]
