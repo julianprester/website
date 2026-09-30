@@ -97,11 +97,10 @@ export default function (eleventyConfig) {
       const title = data.news?.title || data.title || ""
       const author = data.author || ""
       const fallback =
-        "Julian Prester is a Senior Lecturer of Business Information Systems at The University of Sydney. Researching digital work, digital nomadism, and platform work."
+        "Julian Prester studies all-remote organising at the University of Sydney. His focus is how organising works when there is no shared place."
 
       if (url === "/") return fallback
-      if (url === "/research/")
-        return "Julian Prester's research on digital work, digital nomadism, and platform work. Publications, conference papers, and presentations."
+      if (url === "/research/") return fallback
       if (url === "/teaching/")
         return "Courses taught by Julian Prester — Data Visualisation, Managing Data at Scale, Business Intelligence, and more at the University of Sydney and UNSW."
       if (url === "/writing/")
